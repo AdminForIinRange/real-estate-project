@@ -1,22 +1,30 @@
-import { HStack, Text, Box, Icon, Spacer, } from "@chakra-ui/react";
+import { HStack, Text, Box, Icon, Spacer, VStack, Input } from "@chakra-ui/react";
 import React from "react";
 import Spark from "@/Svg/Spark.svg";
 import Star from "@/Svg/Star.svg";
 import Image from "next/image";
-
+import { TiStarburst } from "react-icons/ti";
 const Hero = () => {
   return (
     <>
       <HStack mt={"10"} justify={"center"} align={"start"} w={"100%"}>
-      <HStack alignItems="center" as="span" > {/* Align items vertically */}
-  <Text fontSize="70px" fontFamily="Raleway" flex="1" as="span" > {/* Set flex to 1 to take remaining space */}
-    Unlock Success: Co-Own for Max Returns, Min Risk!
-    <Box minW="100px"> {/* Adjust the width as needed */}
-    <Image as="span" src={Spark} width={10} height={10} /> {/* Adjust width and height as needed */}
-  </Box>
-  </Text>
- 
-</HStack>
+        <VStack  h={"100%"}>
+            
+          <Text as={"span"} fontSize={"70px"} fontFamily={"Raleway"} w={"100%"}>
+            Unlock Success: Co-Own for Max Returns, Min Risk!
+        
+          </Text> 
+
+          <Text as={"span"} fontSize={"30px"} fontFamily={"Raleway"} w={"100%"}>
+          Accelerate Wealth Growth: Explore Co-Ownership Opportunities for Smart Investors!
+        
+          </Text> 
+    
+
+    <Input />
+    
+          
+        </VStack>
 
         <Spacer />
         <HStack w={"50%"} h={"100%"}>

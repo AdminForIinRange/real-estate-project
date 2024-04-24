@@ -29,7 +29,7 @@ const Navbar = () => {
             >
 
                 <Box minW={"10"}>
-               <Image src={Logo}  />
+               <Image src={Logo}   />
                 </Box>
                 
                 <Box w={["0%", "0%", "0%", "0%", "50%"]}>
