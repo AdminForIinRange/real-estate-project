@@ -1,8 +1,24 @@
+import Navbar from '@/components/navbar/navbar'
+import { Box } from '@chakra-ui/react'
 import React from 'react'
-
+import Hero from '@/components/hero/hero'
 const Home = () => {
   return (
-    <div>Home</div>
+    <>
+ 
+    <Box  px={["2", "2", "5", "12", "12"]} > 
+
+
+
+    <Box>
+      <Navbar />
+    </Box>
+
+    <Box>
+      <Hero />
+    </Box>
+    </Box>
+    </>
   )
 }
 
