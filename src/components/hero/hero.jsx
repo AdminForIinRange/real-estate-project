@@ -26,6 +26,7 @@ import ninjaStarFlower from "@/Svg/ninjaStarFlower.svg";
 import { FaStar } from "react-icons/fa6";
 import { FaArrowRight } from "react-icons/fa6";
 import { FaArrowUp } from "react-icons/fa6";
+import dimond from "@/Svg/dimond.svg";
 const Hero = () => {
   return (
     <>
@@ -157,15 +158,86 @@ const Hero = () => {
               </VStack>
             </Box>
           </HStack>
+
+          <VStack
+            w={"100%"}
+            align={"center"}
+            justify={"center"}
+            mt={"60px"}
+            pr={"50px"}
+          >
+            <Box
+              w={"100%"}
+              h={"130px"}
+              rounded={"10px"}
+              boxShadow={"0px 0px 20px rgba(0,0,0,0.25)"}
+            ></Box>
+
+            <Box
+              w={"80%"}
+              h={"400px"}
+              mt={"-90px"}
+              boxShadow={"0px 0px 20px rgba(0,0,0,0.25)"}
+              rounded={"xl"}
+              bgImage={
+                "https://source.unsplash.com/windowpanes-at-the-building-B0aCvAVSX8E"
+              }
+              bgSize={"cover"}
+              bgPos={["center", " center", "center", "center", "center"]}
+            ></Box>
+          </VStack>
+
+          <Box mt={"60px"}>
+            <HStack px={"50px"} gap={"20px"}>
+              <Image src={dimond} width={50} height={100}  /> 
+              <Text fontSize={"50px"} fontFamily={"Raleway"}>
+                Why Co-Ownership
+              </Text>
+            </HStack>
+
+            <Text
+              px={"115px"}
+              fontSize={"20px"}
+              fontFamily={"Raleway"}
+              mt={"50px"}
+              w={"90%"}
+            >
+              Co-ownership offers a powerful investment strategy where
+              individuals join forces to share ownership of properties, pooling
+              resources for greater returns while spreading risk. It's a
+              collaborative path to real estate success."
+            </Text>
+          </Box>
+
+          <VStack
+            px={"50px"}
+            w={"100%"}
+            align={"center"}
+            justify={"center"}
+            mt={"60px"}
+            pr={"50px"}
+          >
+            <Box
+              bgImage={
+                "https://source.unsplash.com/white-and-brown-concrete-building-b_79nOqf95I"
+              }
+              bgSize={"cover"}
+              bgRepeat={"no-repeat"}
+              bgPos={["center", " center", "center", "center", "center "]}
+              w={"100%"}
+              h={"300px"}
+              rounded={"10px"}
+              boxShadow={"0px 0px 20px rgba(0,0,0,0.25)"}
+            ></Box>
+          </VStack>
         </VStack>
 
         <Spacer />
         <HStack w={"50%"} h={"100%"}>
           <Box
-            bg={"white"}
             rounded={"xl"}
             boxShadow={"0px 0px 30px rgba(0,0,0,0.25)"}
-            h={"1000px"}
+            h={"1050px"}
             w={"100%"}
             p={5}
             as=""
@@ -191,14 +263,15 @@ const Hero = () => {
               h={"100%"}
               justify={"start"}
               align={"center"}
-              mt={"15px"}
+              mt={"20px"}
+              gap={"27px"}
             >
               <Box
                 cursor={"pointer"}
                 transition="transform, 0.3s ease-in-out"
                 _hover={{
                   shadow: "0px 0px 20px gray",
-                  height: "35%",
+                  height: "25%",
                 }}
                 w={"100%"}
                 h={"200px"}
@@ -223,7 +296,7 @@ const Hero = () => {
                     justify={"left"}
                     align={"start"}
                   >
-                      <Box
+                    <Box
                       cursor={"pointer"}
                       transition="transform, 0.3s ease-in-out, boxShadow 1s ease-in-out"
                       _hover={{
@@ -274,7 +347,6 @@ const Hero = () => {
                         align={"center"}
                         textColor={"green.500"}
                       >
-                      
                         <Text
                           fontFamily={"sans-serif"}
                           fontWeight={"500"}
@@ -351,7 +423,159 @@ const Hero = () => {
                 transition="transform, 0.3s ease-in-out"
                 _hover={{
                   shadow: "0px 0px 20px gray",
-                  height: "35%",
+                  height: "25%",
+                }}
+                w={"100%"}
+                h={"200px"}
+                rounded={"xl"}
+                bgImage={
+                  "https://source.unsplash.com/white-and-brown-concrete-building-under-blue-sky-during-daytime-5QLCohwVndQ"
+                }
+                bgSize={"cover"}
+                bgPos={["top", " top", "top", "top", "top"]}
+              >
+                <VStack
+                  w={"100%"}
+                  h={"100%"}
+                  justify={"end"}
+                  align={"left"}
+                  p={4}
+                  gap={"-1000px"}
+                >
+                  <HStack
+                    w={"100%"}
+                    h={"100%"}
+                    justify={"left"}
+                    align={"start"}
+                  >
+                    <Box
+                      cursor={"pointer"}
+                      transition="transform, 0.3s ease-in-out, boxShadow 1s ease-in-out"
+                      _hover={{
+                        transform: "scale(1.03)",
+                      }}
+                      w={"12%"}
+                      h={"28px"}
+                      bg={"green.200"}
+                      rounded={"10px"}
+                      boxShadow={"0px 0px 30px rgba(0,0,0,0.25)"}
+                      zIndex={"1"}
+                    >
+                      <HStack
+                        w={"100%"}
+                        h={"100%"}
+                        justify={"center"}
+                        align={"center"}
+                        textColor={"green.500"}
+                      >
+                        <FaArrowUp fontSize={"13px"} />
+                        <Text
+                          fontFamily={"sans-serif"}
+                          fontWeight={"500"}
+                          fontSize={"17px"}
+                          color={"green.500"}
+                        >
+                          2%
+                        </Text>
+                      </HStack>
+                    </Box>
+                    <Box
+                      cursor={"pointer"}
+                      transition="transform, 0.3s ease-in-out, boxShadow 1s ease-in-out"
+                      _hover={{
+                        transform: "scale(1.03)",
+                      }}
+                      w={"12%"}
+                      h={"28px"}
+                      bg={"gray.200"}
+                      rounded={"10px"}
+                      boxShadow={"0px 0px 30px rgba(0,0,0,0.25)"}
+                      zIndex={"1"}
+                    >
+                      <HStack
+                        w={"100%"}
+                        h={"100%"}
+                        justify={"center"}
+                        align={"center"}
+                        textColor={"green.500"}
+                      >
+                        <Text
+                          fontFamily={"sans-serif"}
+                          fontWeight={"500"}
+                          fontSize={"17px"}
+                          color={"gray"}
+                        >
+                          New
+                        </Text>
+                      </HStack>
+                    </Box>
+                  </HStack>
+                  <Text
+                    fontFamily={"sans-serif"}
+                    as={"span"}
+                    fontSize={"30px"}
+                    textShadow={"0px 0px  10px rgba(0,0,0,1)"}
+                    w={"100%"}
+                    fontWeight={"600"}
+                    color={"white"}
+                  >
+                    $1,542,964
+                  </Text>{" "}
+                  <Text
+                    fontFamily={"sans-serif"}
+                    as={"span"}
+                    fontSize={"20px"}
+                    textShadow={"0px 0px  60px rgba(0,0,0,1)"}
+                    w={"100%"}
+                    fontWeight={"600"}
+                    color={"white"}
+                  >
+                    <HStack>
+                      <FaStar color="yellow" /> <FaStar color="yellow" />{" "}
+                      <FaStar color="yellow" /> <FaStar color="yellow" />{" "}
+                      <FaStar />
+                    </HStack>
+                  </Text>
+                  <Box
+                    mt={"10px"}
+                    cursor={"pointer"}
+                    transition="transform, 0.3s ease-in-out, boxShadow 1s ease-in-out"
+                    _hover={{
+                      transform: "scale(1.03)",
+                      backgroundColor: "#C2FF93",
+                    }}
+                    w={"190px"}
+                    h={"30px"}
+                    bg={"white"}
+                    rounded={"10px"}
+                    boxShadow={"0px 0px 30px rgba(0,0,0,0.25)"}
+                  >
+                    <HStack
+                      w={"100%"}
+                      h={"30px"}
+                      justify={"center"}
+                      align={"center"}
+                      textColor={"black"}
+                    >
+                      <Text
+                        fontFamily={"sans-serif"}
+                        fontWeight={"500"}
+                        fontSize={"16px"}
+                        color={"black"}
+                      >
+                        Buy a Percentage
+                      </Text>
+                      <FaArrowRight fontSize={"16px"} />
+                    </HStack>
+                  </Box>
+                </VStack>
+              </Box>
+              <Box
+                cursor={"pointer"}
+                transition="transform, 0.3s ease-in-out"
+                _hover={{
+                  shadow: "0px 0px 20px gray",
+                  height: "25%",
                 }}
                 w={"100%"}
                 h={"200px"}
@@ -406,7 +630,6 @@ const Hero = () => {
                           2%
                         </Text>
                       </HStack>
-                      
                     </Box>
                     <Box
                       cursor={"pointer"}
@@ -428,7 +651,6 @@ const Hero = () => {
                         align={"center"}
                         textColor={"green.500"}
                       >
-                      
                         <Text
                           fontFamily={"sans-serif"}
                           fontWeight={"500"}
@@ -504,7 +726,7 @@ const Hero = () => {
                 transition="transform, 0.3s ease-in-out"
                 _hover={{
                   shadow: "0px 0px 20px gray",
-                  height: "35%",
+                  height: "25%",
                 }}
                 w={"100%"}
                 h={"200px"}
@@ -529,7 +751,7 @@ const Hero = () => {
                     justify={"left"}
                     align={"start"}
                   >
-                     <Box
+                    <Box
                       cursor={"pointer"}
                       transition="transform, 0.3s ease-in-out, boxShadow 1s ease-in-out"
                       _hover={{
@@ -580,7 +802,6 @@ const Hero = () => {
                         align={"center"}
                         textColor={"green.500"}
                       >
-                      
                         <Text
                           fontFamily={"sans-serif"}
                           fontWeight={"500"}
