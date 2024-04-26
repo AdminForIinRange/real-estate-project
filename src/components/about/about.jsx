@@ -18,12 +18,14 @@ import {
   useMediaQuery,
 } from "@chakra-ui/react";
 import HouseStats from "./houseStats/houseStats";
+import ApartmentVerticalBanner from "../apartmentVerticalBanner/apartmentVerticalBanner";
 const About = () => {
   return (
     <>
 
+
     
-      <Box mt={"400px"}>
+      <Box mt={"250px"}>
         <HStack px={["10px", "20px", "20px", "50px", "50px"]} gap={"20px"}>
           <Image src={dimond} width={50} height={100} />
           <Text
@@ -49,17 +51,21 @@ const About = () => {
           real estate success."
         </Text>
       </Box>
+      
 
       <HStack
         px={["10px", "10px", "10px", "50px", "50px"]}
-        w={["100%", "100%", "100%", "100%", "70%"]}
+        w={["100%", "100%", "100%", "100%", "80%"]}
         align={"start"}
         justify={"center"}
         mt={"60px"}
-        gap={["3", "3", "3", "3", "3"]}
+        gap={["3", "3", "6", "8", "8"]}
         wrap={["wrap", "wrap", "nowrap", "nowrap", "nowrap"]}
       >
+        
+
         <HouseStats />
+      
       </HStack>
     </>
   );

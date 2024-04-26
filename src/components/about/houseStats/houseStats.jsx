@@ -38,7 +38,7 @@ const HouseStats = () => {
   const stats = [
     { label: "Weekly", number: "1.9%" },
     { label: "Monthly", number: "7.6%" },
-    { label: "Yearly", number: "37.2%" },
+    { label: "Yearly", number: "32%" },
   ];
 
   const extraStats = [

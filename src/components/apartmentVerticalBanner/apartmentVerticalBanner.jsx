@@ -1,5 +1,3 @@
-import React from 'react'
-
 import {
     HStack,
     Text,
@@ -14,11 +12,17 @@ import {
     Button,
     useMediaQuery,
   } from "@chakra-ui/react";
-const HouseVerticalBanner = () => {
+const ApartmentVerticalBanner = () => {
   return (
     <>
     
-    
+    <VStack
+            w={"100%"}
+            align={"center"}
+            justify={"center"}
+            mt={"60px"}
+            pr={["0px", "0px", "0px", "15px", "50px"]}
+          >
     <Box
               w={"100%"}
               h={"130px"}
@@ -38,9 +42,10 @@ const HouseVerticalBanner = () => {
               bgSize={"cover"}
               bgPos={["center", " center", "center", "center", "center"]}
             ></Box>
-            
-            </>
+    
+    </VStack>
+    </>
   )
 }
 
-export default HouseVerticalBanner
+export default ApartmentVerticalBanner
