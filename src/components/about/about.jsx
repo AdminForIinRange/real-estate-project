@@ -21,6 +21,8 @@ import HouseStats from "./houseStats/houseStats";
 const About = () => {
   return (
     <>
+
+    
       <Box mt={"400px"}>
         <HStack px={["10px", "20px", "20px", "50px", "50px"]} gap={"20px"}>
           <Image src={dimond} width={50} height={100} />
@@ -58,7 +60,6 @@ const About = () => {
         wrap={["wrap", "wrap", "nowrap", "nowrap", "nowrap"]}
       >
         <HouseStats />
-       
       </HStack>
     </>
   );
