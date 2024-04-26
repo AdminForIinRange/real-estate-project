@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 
 import {
   HStack,
@@ -48,32 +48,95 @@ const HouseStats = () => {
     ,
   ];
 
+  const [flexibleBgImage, setFlexibleBgImage] = useState("https://source.unsplash.com/white-concrete-building-under-blue-sky-during-daytime-mR1CIDduGLc");
+
   return (
     <>
-      <Box
-        bgImage={
-          "https://source.unsplash.com/white-and-brown-concrete-building-b_79nOqf95I"
-        }
+      <Box transition={"transform 0.3s ease-in-out"}
+
+        bgImage={flexibleBgImage}
+        
+        
         bgSize={"cover"}
         bgRepeat={"no-repeat"}
         bgPos={["center", " center", "center", "center", "center "]}
         w={"100%"}
         h={"300px"}
+        rounded={"5px"}
+        boxShadow={"0px 0px 20px rgba(0,0,0,0.50)"}
+      >
+        <HStack w={"100%"} h={"100%"} align={"start"} justify={"start"} p={5}  gap={"15px"}>
+<Box  transition={"transform 0.3s ease-in-out"} _hover={{
+  transform: "scale(1.1)",
+}}       cursor={"pointer"}         onClick={() => setFlexibleBgImage("https://source.unsplash.com/white-concrete-building-under-blue-sky-during-daytime-mR1CIDduGLc")} bgImage={
+          "https://source.unsplash.com/white-concrete-building-under-blue-sky-during-daytime-mR1CIDduGLc"
+        }
+        bgSize={"cover"}
+        bgRepeat={"no-repeat"}
+        bgPos={["center", " center", "center", "center", "center "]}
+        w={"75px"}
+        h={"75px"}
         rounded={"10px"}
-        boxShadow={"0px 0px 20px rgba(0,0,0,0.25)"}
-      ></Box>
+        boxShadow={"0px 0px 20px rgba(0,0,0,0.50)"} >
+
+</Box>
+<Box   transition={"transform 0.3s ease-in-out"} _hover={{
+  transform: "scale(1.1)",
+}}      cursor={"pointer"}         onClick={() => setFlexibleBgImage("https://source.unsplash.com/round-white-wooden-table-near-kitchen-island-MyeOnGcibCQ")} bgImage={
+          "https://source.unsplash.com/round-white-wooden-table-near-kitchen-island-MyeOnGcibCQ"
+        }
+        bgSize={"cover"}
+        bgRepeat={"no-repeat"}
+        bgPos={["center", " center", "center", "center", "center "]}
+        w={"75px"}
+        h={"75px"}
+        rounded={"10px"}
+         boxShadow={"0px 0px 20px rgba(0,0,0,0.50)"} >
+
+</Box>
+<Box   transition={"transform 0.3s ease-in-out"} _hover={{
+  transform: "scale(1.1)",
+}}       cursor={"pointer"}         onClick={() => setFlexibleBgImage("https://source.unsplash.com/brown-wooden-kitchen-cabinet-JDBVXignFdA")}  bgImage={
+          "https://source.unsplash.com/brown-wooden-kitchen-cabinet-JDBVXignFdA"
+        }
+        bgSize={"cover"}
+        bgRepeat={"no-repeat"}
+        bgPos={["center", " center", "center", "center", "center "]}
+        w={"75px"}
+        h={"75px"}
+        rounded={"10px"}
+         boxShadow={"0px 0px 20px rgba(0,0,0,0.50)"} >
+
+</Box>
+
+<Box  transition={"transform 0.3s ease-in-out"} _hover={{
+  transform: "scale(1.1)",
+}}        cursor={"pointer"}         onClick={() => setFlexibleBgImage("https://source.unsplash.com/white-ceramic-bathtub-near-black-textile-mdwOo5PeXpE")} bgImage={
+          "https://source.unsplash.com/white-ceramic-bathtub-near-black-textile-mdwOo5PeXpE"
+        }
+        bgSize={"cover"}
+        bgRepeat={"no-repeat"}
+        bgPos={["center", " center", "center", "center", "center "]}
+        w={"75px"}
+        h={"75px"}
+        rounded={"10px"}
+         boxShadow={"0px 0px 20px rgba(0,0,0,0.50)"} >
+
+</Box>
+        </HStack>
+      </Box>
 
       <Box
         shadow={"0px 0px 20px rgba(0,0,0,0.25)"}
-        w={["100%", "85%", "80%", "70%", "50%"]}
-        h={"300px"}
+        w={["100%", "85%", "80%", "70%", "40%"]}
+        h={"230px"}
         rounded={"10px"}
-        boxShadow={"0px 0px 20px rgba(0,0,0,0.25)"}
+        boxShadow={"0px 0px 20px rgba(0,0,0,0.50)"}
         p={"3"}
       >
         <HStack justify={"center"} align={"center"}>
           <Text
-            fontSize={["30px", "30px", "30px", "50px", "50px"]}
+            fontSize={["35px", "40px", "40px", "40px", "40px"]}
             fontWeight={"100"}
           >
             {" "}
@@ -95,7 +158,7 @@ const HouseStats = () => {
               align={"center"}
               textColor={"green.500"}
             >
-              <FaArrowUp fontSize={"13px"} />
+              <FaArrowUp fontSize={"12px"} />
               <Text
                 fontFamily={"sans-serif"}
                 fontWeight={"500"}
@@ -141,7 +204,7 @@ const HouseStats = () => {
                     align={"center"}
                     textColor={"green.500"}
                   >
-                    <FaArrowUp fontSize={"13px"} />
+                    <FaArrowUp fontSize={"12px"} />
                     <Text
                       fontFamily={"sans-serif"}
                       fontWeight={"100"}
@@ -206,7 +269,15 @@ const HouseStats = () => {
           ))}
         </HStack>
 
-        <VStack w={"100%"} h={"65px"} mt={"10px"} rounded={"10px"} py={"10px"} justify={"center"} align={"center"}>
+        <VStack
+          w={"100%"}
+          h={"65px"}
+          mt={"10px"}
+          rounded={"10px"}
+          py={"10px"}
+          justify={"center"}
+          align={"center"}
+        >
           <HStack
             justify={"center"}
             align={"center"}
@@ -214,40 +285,7 @@ const HouseStats = () => {
             gap={"15px"}
             mb={"5px"}
           >
-            <HStack>
-              <FaBed fontSize={"13px"} as="span" />
-              <Text fontSize={"13px"}>Bed: 5</Text>
-            </HStack>
-
-            <HStack>
-              <FaHammer fontSize={"13px"} />
-              <Text fontSize={"13px"}>built: 2022</Text>
-            </HStack>
-
-
-            <HStack>
-            <IoIosResize fontSize={"13px"} />
-            <Text fontSize={"13px"}>Land: 800m2</Text>
-            </HStack>
-      
-          </HStack>
-          <HStack justify={"center"} align={"center"} w={"100%"} gap={"15px"}>
-
-          <HStack>
-          <FaHouse fontSize={"13px"} />
-            <Text fontSize={"13px"}>Type: Rental</Text>
-
-            </HStack>
-            <HStack>
-            <FaRuler fontSize={"13px"} />
-            <Text fontSize={"13px"}>Hight: 2022</Text>
-
-            </HStack>
-            <HStack>
-            <IoIosResize fontSize={"13px"} />
-            <Text fontSize={"13px"}>Tenants: 2</Text>
-            </HStack>
-     
+            
           </HStack>
         </VStack>
       </Box>

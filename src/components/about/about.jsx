@@ -50,7 +50,7 @@ const About = () => {
       </Box>
 
       <HStack
-        px={"50px"}
+        px={["10px", "20px", "30px", "40px", "50px"]}
         w={["100%", "100%", "100%", "100%", "80%"]}
         align={"start"}
         justify={"center"}
