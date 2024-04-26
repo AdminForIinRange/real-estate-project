@@ -13,7 +13,8 @@
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^5.1.0",
-    "recharts": "^2.12.6"
+    "recharts": "^2.12.6",
+    "tremor": "^0.0.1"
   },
   "devDependencies": {
     "eslint": "^8",
