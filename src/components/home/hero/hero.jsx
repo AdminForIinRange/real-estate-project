@@ -59,7 +59,7 @@ const Hero = () => {
 
           <VStack
             w={"100%"}
-            align={"start"}
+            align={"center"}
             justify={"center"}
             mt={"60px"}
             pr={["0px", "0px", "0px", "15px", "50px"]}

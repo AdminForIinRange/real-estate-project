@@ -23,7 +23,7 @@ const About = () => {
   return (
     <>
       <Box mt={"250px"}>
-        <HStack px={["10px", "20px", "20px", "50px", "50px"]} gap={"20px"}>
+        <HStack px={"50px"} gap={"20px"}>
           <Image src={dimond} width={50} height={100} />
           <Text
             fontSize={["30px", "30px", "30px", "50px", "70px"]}
@@ -35,7 +35,7 @@ const About = () => {
         </HStack>
 
         <Text
-          px={["50px", "50px", "50px", "115px", "115px"]}
+          px={"50px"}
           fontSize={["16px", "16px", "20px", "20px", "27px"]}
           fontFamily={"Raleway"}
           mt={["40px", "40px", "50px", "50px", "50px"]}
@@ -50,7 +50,7 @@ const About = () => {
       </Box>
 
       <HStack
-        px={["10px", "10px", "10px", "50px", "50px"]}
+        px={"50px"}
         w={["100%", "100%", "100%", "100%", "80%"]}
         align={"start"}
         justify={"center"}
