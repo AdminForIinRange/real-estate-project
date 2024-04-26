@@ -1,24 +1,22 @@
 "use client";
 import {
-    HStack,
-    Text,
-    Box,
-    Icon,
-    Spacer,
-    VStack,
-    Input,
-    InputGroup,
-    InputRightAddon,
-    MdUnsubscribe,
-    Button,
-    useMediaQuery,
-  } from "@chakra-ui/react";
-  import { FaArrowUp } from "react-icons/fa6";
-  import Star from "@/Svg/Star.svg";
-  import Image from "next/image";
+  HStack,
+  Text,
+  Box,
+  Icon,
+  Spacer,
+  VStack,
+  Input,
+  InputGroup,
+  InputRightAddon,
+  MdUnsubscribe,
+  Button,
+  useMediaQuery,
+} from "@chakra-ui/react";
+import { FaArrowUp } from "react-icons/fa6";
+import Star from "@/Svg/Star.svg";
+import Image from "next/image";
 const FeaturedHouseBox = () => {
-    
-    
   const Featured = [
     {
       id: 1,
@@ -193,44 +191,8 @@ const FeaturedHouseBox = () => {
                   fontWeight={"600"}
                   color={"white"}
                 >
-                  <HStack>
-                    <FaStar color="yellow" /> <FaStar color="yellow" />{" "}
-                    <FaStar color="yellow" /> <FaStar color="yellow" />{" "}
-                    <FaStar />
-                  </HStack>
+                  <HStack></HStack>
                 </Text>
-                <Box
-                  mt={"10px"}
-                  cursor={"pointer"}
-                  transition="transform, 0.3s ease-in-out, boxShadow 1s ease-in-out"
-                  _hover={{
-                    transform: "scale(1.03)",
-                    backgroundColor: "#C2FF93",
-                  }}
-                  w={"190px"}
-                  h={"30px"}
-                  bg={"white"}
-                  rounded={"10px"}
-                  boxShadow={"0px 0px 30px rgba(0,0,0,0.25)"}
-                >
-                  <HStack
-                    w={"100%"}
-                    h={"30px"}
-                    justify={"center"}
-                    align={"center"}
-                    textColor={"black"}
-                  >
-                    <Text
-                      fontFamily={"sans-serif"}
-                      fontWeight={"500"}
-                      fontSize={"16px"}
-                      color={"black"}
-                    >
-                      Buy a Percentage
-                    </Text>
-                    <FaArrowRight fontSize={"16px"} />
-                  </HStack>
-                </Box>
               </VStack>
             </Box>
           ))}

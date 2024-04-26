@@ -1,7 +1,7 @@
 import Navbar from '@/components/navbar/navbar'
 import { Box } from '@chakra-ui/react'
 import React from 'react'
-import Hero from '@/components/hero/hero'
+import Hero from '@/components/home/hero/hero'
 const Home = () => {
   return (
     <>

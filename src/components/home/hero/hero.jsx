@@ -15,19 +15,12 @@ import {
   useMediaQuery,
 } from "@chakra-ui/react";
 import React from "react";
-import Spark from "@/Svg/Spark.svg";
-import Star from "@/Svg/Star.svg";
+
 import Image from "next/image";
-import { TiStarburst } from "react-icons/ti";
 
-import SpikeStar from "@/Svg/SpikeStar.svg";
-import roundedFlower from "@/Svg/roundedFlower.svg";
-
-import ninjaStarFlower from "@/Svg/ninjaStarFlower.svg";
-import { FaStar } from "react-icons/fa6";
-import { FaArrowRight } from "react-icons/fa6";
-import { FaArrowUp } from "react-icons/fa6";
 import dimond from "@/Svg/dimond.svg";
+import FeaturedHouseBox from "../featuredHouseBox/featuredHouseBox";
+import IdeaBox from "../ideaBox/ideaBox";
 
 const Hero = () => {
   const [isMobile] = useMediaQuery("(max-width: 768px)");
@@ -103,71 +96,7 @@ const Hero = () => {
             h={"100%"}
             pr={"50px"}
           >
-            <Box
-              p={"3"}
-              px={"5"}
-              bg={"white"}
-              rounded={"xl"}
-              w={"100%"}
-              h={"200px"}
-              boxShadow={"0px 0px 20px rgba(0,0,0,0.25)"}
-            >
-              <VStack w={"100%"} h={"100%"} justify={"left"} align={"start"}>
-                <Image src={SpikeStar} width={50} height={100} />
-                <Text fontWeight={"bold"} fontSize={"20px"}>
-                  {" "}
-                  Diversified Portfolio{" "}
-                </Text>
-                <Text fontWeight={"200"} fontSize={"16px"}>
-                  {" "}
-                  Co-ownership reduces the financial threshold for entry,
-                  accelerating wealth growth.{" "}
-                </Text>
-              </VStack>
-            </Box>
-            <Box
-              p={"3"}
-              px={"5"}
-              bg={"white"}
-              rounded={"xl"}
-              w={"100%"}
-              h={"200px"}
-              boxShadow={"0px 0px 20px rgba(0,0,0,0.25)"}
-            >
-              <VStack w={"100%"} h={"100%"} justify={"left"} align={"start"}>
-                <Image src={roundedFlower} width={50} height={100} />
-                <Text fontWeight={"bold"} fontSize={"20px"}>
-                  Shared Expertise{" "}
-                </Text>
-                <Text fontWeight={"200"} fontSize={"16px"}>
-                  {" "}
-                  Pooling resources maximizes opportunities and improves
-                  outcomes.
-                </Text>
-              </VStack>
-            </Box>
-            <Box
-              p={"3"}
-              px={"5"}
-              bg={"white"}
-              rounded={"xl"}
-              w={"100%"}
-              h={"200px"}
-              boxShadow={"0px 0px 20px rgba(0,0,0,0.25)"}
-            >
-              {" "}
-              <VStack w={"100%"} h={"100%"} justify={"left"} align={"start"}>
-                <Image src={ninjaStarFlower} width={50} height={100} />
-                <Text fontWeight={"bold"} fontSize={"20px"}>
-                  {" "}
-                  Accessible Investment{" "}
-                </Text>
-                <Text fontWeight={"200"} fontSize={"16px"}>
-                  Co-ownership diversifies investments across properties,
-                  lowering risk.{" "}
-                </Text>
-              </VStack>
-            </Box>
+           <IdeaBox />
           </HStack>
 
           <VStack
@@ -245,7 +174,7 @@ const Hero = () => {
 
         <Spacer />
         <HStack w={"50%"} h={"100%"}>
-         
+         <FeaturedHouseBox />
         </HStack>
         
       </HStack>
