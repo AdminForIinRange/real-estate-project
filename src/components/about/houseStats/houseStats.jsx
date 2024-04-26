@@ -206,7 +206,15 @@ const HouseStats = () => {
           ))}
         </HStack>
 
-        <VStack w={"100%"} h={"65px"} mt={"10px"} rounded={"10px"} py={"10px"} justify={"center"} align={"center"}>
+        <VStack
+          w={"100%"}
+          h={"65px"}
+          mt={"10px"}
+          rounded={"10px"}
+          py={"10px"}
+          justify={"center"}
+          align={"center"}
+        >
           <HStack
             justify={"center"}
             align={"center"}
@@ -224,30 +232,24 @@ const HouseStats = () => {
               <Text fontSize={"13px"}>built: 2022</Text>
             </HStack>
 
-
             <HStack>
-            <IoIosResize fontSize={"13px"} />
-            <Text fontSize={"13px"}>Land: 800m2</Text>
+              <IoIosResize fontSize={"13px"} />
+              <Text fontSize={"13px"}>Land: 800m2</Text>
             </HStack>
-      
           </HStack>
           <HStack justify={"center"} align={"center"} w={"100%"} gap={"15px"}>
-
-          <HStack>
-          <FaHouse fontSize={"13px"} />
-            <Text fontSize={"13px"}>Type: Rental</Text>
-
+            <HStack>
+              <FaHouse fontSize={"13px"} />
+              <Text fontSize={"13px"}>Type: Rental</Text>
             </HStack>
             <HStack>
-            <FaRuler fontSize={"13px"} />
-            <Text fontSize={"13px"}>Hight: 2022</Text>
-
+              <FaRuler fontSize={"13px"} />
+              <Text fontSize={"13px"}>Hight: 2022</Text>
             </HStack>
             <HStack>
-            <IoIosResize fontSize={"13px"} />
-            <Text fontSize={"13px"}>Tenants: 2</Text>
+              <IoIosResize fontSize={"13px"} />
+              <Text fontSize={"13px"}>Tenants: 2</Text>
             </HStack>
-     
           </HStack>
         </VStack>
       </Box>

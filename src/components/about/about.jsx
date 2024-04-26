@@ -22,9 +22,6 @@ import ApartmentVerticalBanner from "../apartmentVerticalBanner/apartmentVertica
 const About = () => {
   return (
     <>
-
-
-    
       <Box mt={"250px"}>
         <HStack px={["10px", "20px", "20px", "50px", "50px"]} gap={"20px"}>
           <Image src={dimond} width={50} height={100} />
@@ -51,7 +48,6 @@ const About = () => {
           real estate success."
         </Text>
       </Box>
-      
 
       <HStack
         px={["10px", "10px", "10px", "50px", "50px"]}
@@ -62,10 +58,7 @@ const About = () => {
         gap={["3", "3", "6", "8", "8"]}
         wrap={["wrap", "wrap", "nowrap", "nowrap", "nowrap"]}
       >
-        
-
         <HouseStats />
-      
       </HStack>
     </>
   );

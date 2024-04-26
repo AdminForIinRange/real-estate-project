@@ -116,7 +116,6 @@ const FeaturedHouseBox = () => {
                       transform: "scale(1.03)",
                     }}
                     w={["70px", "70px", "70px", "70px", "70px"]}
-                 
                     h={"28px"}
                     bg={"green.200"}
                     rounded={"10px"}
@@ -124,7 +123,6 @@ const FeaturedHouseBox = () => {
                     zIndex={"1"}
                   >
                     <HStack
-                 
                       w={"100%"}
                       h={"100%"}
                       justify={"center"}
@@ -142,18 +140,15 @@ const FeaturedHouseBox = () => {
                       </Text>
                     </HStack>
                   </Box>
-                
                 </HStack>
                 <Text
                   fontFamily={"sans-serif"}
                   as={"span"}
-      fontSize={["12px", "16px", "16px", "20px", "25px"]}
+                  fontSize={["12px", "16px", "16px", "20px", "25px"]}
                   textShadow={"0px 0px  10px rgba(0,0,0,1)"}
                   w={"100%"}
                   fontWeight={"600"}
                   color={"white"}
-         
-                  
                 >
                   {Price}
                 </Text>{" "}

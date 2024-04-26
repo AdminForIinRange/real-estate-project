@@ -4,8 +4,6 @@ import React from "react";
 import Logo from "@/Svg/Logo.svg";
 import Image from "next/image";
 
-
-
 const Navbar = () => {
   return (
     <>
@@ -27,29 +25,42 @@ const Navbar = () => {
               gap={["6", "10", "20", "20", "20"]}
               fontFamily={"Raleway"}
             >
+              <Box minW={"10"}>
+                <Image src={Logo} />
+              </Box>
 
-                <Box minW={"10"}>
-               <Image src={Logo}   />
-                </Box>
-                
-                <Box w={["0%", "0%", "0%", "0%", "50%"]}>
+              <Box w={["0%", "0%", "0%", "0%", "50%"]}></Box>
 
-                </Box>
-  
+              <Text
+                whiteSpace={"nowrap"}
+                fontSize={["12px", "12px", "14px", "16px", "16px"]}
+              >
+                Blog
+              </Text>
 
-              <Text whiteSpace={"nowrap"} fontSize={["12px", "12px", "14px", "16px", "16px"]}>Blog</Text>
+              <Text
+                whiteSpace={"nowrap"}
+                fontSize={["12px", "12px", "14px", "16px", "16px"]}
+              >
+                About Us
+              </Text>
 
-              <Text  whiteSpace={"nowrap"} fontSize={["12px", "12px", "14px", "16px", "16px"]} >About Us</Text>
+              <Text
+                whiteSpace={"nowrap"}
+                fontSize={["12px", "12px", "14px", "16px", "16px"]}
+              >
+                Properties{" "}
+              </Text>
 
-              <Text  whiteSpace={"nowrap"} fontSize={["12px", "12px", "14px", "16px", "16px"]} >Properties </Text>
-
-              <Text  whiteSpace={"nowrap"}fontSize={["12px", "12px", "14px", "16px", "16px"]}>Add Listing </Text>
+              <Text
+                whiteSpace={"nowrap"}
+                fontSize={["12px", "12px", "14px", "16px", "16px"]}
+              >
+                Add Listing{" "}
+              </Text>
             </HStack>
           </Box>
         </HStack>
-
-        
-
       </HStack>
     </>
   );
