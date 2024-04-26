@@ -1,0 +1,67 @@
+import React from "react";
+import dimond from "@/Svg/dimond.svg";
+
+import Image from "next/image";
+import { FaArrowUp } from "react-icons/fa6";
+import {
+  HStack,
+  Text,
+  Box,
+  Icon,
+  Spacer,
+  VStack,
+  Input,
+  InputGroup,
+  InputRightAddon,
+  MdUnsubscribe,
+  Button,
+  useMediaQuery,
+} from "@chakra-ui/react";
+import HouseStats from "./houseStats/houseStats";
+const About = () => {
+  return (
+    <>
+      <Box mt={"400px"}>
+        <HStack px={["10px", "20px", "20px", "50px", "50px"]} gap={"20px"}>
+          <Image src={dimond} width={50} height={100} />
+          <Text
+            fontSize={["30px", "30px", "30px", "50px", "50px"]}
+            fontFamily={"Raleway"}
+            fontWeight={"500"}
+          >
+            Why Co-Ownership
+          </Text>
+        </HStack>
+
+        <Text
+          px={["50px", "50px", "50px", "115px", "115px"]}
+          fontSize={["16px", "16px", "20px", "20px", "30px"]}
+          fontFamily={"Raleway"}
+          mt={["40px", "40px", "50px", "50px", "50px"]}
+          w={["100%", "90%", "80%", "70%", "70%"]}
+          fontWeight={"300"}
+        >
+          Co-ownership offers a powerful investment strategy where individuals
+          join forces to share ownership of properties, pooling resources for
+          greater returns while spreading risk. It's a collaborative path to
+          real estate success."
+        </Text>
+      </Box>
+
+      <HStack
+        px={["10px", "10px", "10px", "50px", "50px"]}
+        w={"70%"}
+        align={"center"}
+        justify={"center"}
+        mt={"60px"}
+        gap={["3", "3", "3", "3", "3"]}
+        wrap={["wrap", "wrap", "nowrap", "nowrap", "nowrap"]}
+      >
+        <HouseStats />
+       
+      </HStack>
+    </>
+  );
+};
+
+export default About;

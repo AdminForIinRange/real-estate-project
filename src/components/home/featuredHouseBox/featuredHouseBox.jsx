@@ -56,18 +56,18 @@ const FeaturedHouseBox = () => {
         boxShadow={"0px 0px 30px rgba(0,0,0,0.25)"}
         h={"100%"}
         w={"100%"}
-        p={5}
+        p={["5", "5", "4", "4", "5"]}
       >
         <Box minW={"100"} as="span">
           <HStack>
             <Text
               as={"span"}
-              fontSize={"35px"}
+              fontSize={["12px", "16px", "20px", "30px", "30px"]}
               fontFamily={"Raleway"}
               w={"100%"}
-              fontWeight={"600"}
+              fontWeight={"700"}
             >
-              Featured Near You
+              Featured
             </Text>
             <Image src={Star} width={50} height={100} />
           </HStack>
@@ -80,7 +80,7 @@ const FeaturedHouseBox = () => {
           justify={"start"}
           align={"center"}
           mt={"20px"}
-          gap={"27px"}
+          gap={["10px", "10px", "10px", "10px", "15px"]}
           transition="all 0.3s ease-in-out"
         >
           {Featured.map(({ id, imgUrl, Price, change }, index) => (
@@ -105,7 +105,7 @@ const FeaturedHouseBox = () => {
                 h={"100%"}
                 justify={"end"}
                 align={"left"}
-                p={4}
+                p={2}
                 gap={"-1000px"}
               >
                 <HStack w={"100%"} h={"100%"} justify={"left"} align={"start"}>
@@ -115,7 +115,8 @@ const FeaturedHouseBox = () => {
                     _hover={{
                       transform: "scale(1.03)",
                     }}
-                    w={"12%"}
+                    w={["70px", "70px", "70px", "70px", "70px"]}
+                 
                     h={"28px"}
                     bg={"green.200"}
                     rounded={"10px"}
@@ -123,6 +124,7 @@ const FeaturedHouseBox = () => {
                     zIndex={"1"}
                   >
                     <HStack
+                 
                       w={"100%"}
                       h={"100%"}
                       justify={"center"}
@@ -140,45 +142,18 @@ const FeaturedHouseBox = () => {
                       </Text>
                     </HStack>
                   </Box>
-                  <Box
-                    cursor={"pointer"}
-                    transition="transform, 0.3s ease-in-out, boxShadow 1s ease-in-out"
-                    _hover={{
-                      transform: "scale(1.03)",
-                    }}
-                    w={"12%"}
-                    h={"28px"}
-                    bg={"gray.200"}
-                    rounded={"10px"}
-                    boxShadow={"0px 0px 30px rgba(0,0,0,0.25)"}
-                    zIndex={"1"}
-                  >
-                    <HStack
-                      w={"100%"}
-                      h={"100%"}
-                      justify={"center"}
-                      align={"center"}
-                      textColor={"green.500"}
-                    >
-                      <Text
-                        fontFamily={"sans-serif"}
-                        fontWeight={"500"}
-                        fontSize={"17px"}
-                        color={"gray"}
-                      >
-                        New
-                      </Text>
-                    </HStack>
-                  </Box>
+                
                 </HStack>
                 <Text
                   fontFamily={"sans-serif"}
                   as={"span"}
-                  fontSize={"30px"}
+      fontSize={["12px", "16px", "16px", "20px", "25px"]}
                   textShadow={"0px 0px  10px rgba(0,0,0,1)"}
                   w={"100%"}
                   fontWeight={"600"}
                   color={"white"}
+         
+                  
                 >
                   {Price}
                 </Text>{" "}
