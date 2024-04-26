@@ -29,60 +29,25 @@ import {
 } from "recharts";
 
 import { FaArrowUp } from "react-icons/fa6";
-
-import chart from "@/Svg/chart.png";
-
+import { FaBed } from "react-icons/fa";
+import { FaHammer } from "react-icons/fa";
+import { IoIosResize } from "react-icons/io";
+import { FaHouse } from "react-icons/fa6";
+import { FaRuler } from "react-icons/fa";
 const HouseStats = () => {
   const stats = [
-    { label: "Weekly", percentage: "1.9%" },
-    { label: "Monthly", percentage: "7.6%" },
-    { label: "Yearly", percentage: "37.2%" },
+    { label: "Weekly", number: "1.9%" },
+    { label: "Monthly", number: "7.6%" },
+    { label: "Yearly", number: "37.2%" },
   ];
 
-  const data = [
-    {
-      name: "Page A",
-      uv: 4000,
-      pv: 2400,
-      amt: 2400,
-    },
-    {
-      name: "Page B",
-      uv: 3000,
-      pv: 1398,
-      amt: 2210,
-    },
-    {
-      name: "Page C",
-      uv: 2000,
-      pv: 9800,
-      amt: 2290,
-    },
-    {
-      name: "Page D",
-      uv: 2780,
-      pv: 3908,
-      amt: 2000,
-    },
-    {
-      name: "Page E",
-      uv: 1890,
-      pv: 4800,
-      amt: 2181,
-    },
-    {
-      name: "Page F",
-      uv: 2390,
-      pv: 3800,
-      amt: 2500,
-    },
-    {
-      name: "Page G",
-      uv: 3490,
-      pv: 4300,
-      amt: 2100,
-    },
+  const extraStats = [
+    { label: "Investors", number: "1.4k" },
+    { label: "land", number: "356k" },
+    { label: "Rental", number: "2.5k" },
+    ,
   ];
+
   return (
     <>
       <Box
@@ -100,7 +65,7 @@ const HouseStats = () => {
 
       <Box
         shadow={"0px 0px 20px rgba(0,0,0,0.25)"}
-        w={"40%"}
+        w={["100%", "85%", "80%", "70%", "50%"]}
         h={"300px"}
         rounded={"10px"}
         boxShadow={"0px 0px 20px rgba(0,0,0,0.25)"}
@@ -142,29 +107,15 @@ const HouseStats = () => {
             </HStack>
           </Box>
         </HStack>
-
-        <Divider mt={"5px"} borderColor={"lack"} />
-        <Box
-          mt={"10px"}
-          w={"100%"}
-          h={"100px"}
-          boxShadow={"0px 0px 20px rgba(0,0,0,0.25)"}
-          rounded={"10px"}
-          bgImage={`${chart}`}
-          bgSize={"cover"}
-          bgPos={["center", " center", "center", "center", "center"]}
-          bgRepeat={"no-repeat"}
-        ></Box>
         <HStack
           justify={"center"}
           align={"start"}
           w={"100%"}
-          h={"100%"}
           gap={"25px"}
-          mt={"10px"}
+          mt={"5px"}
         >
           {" "}
-          {stats.map(({ label, percentage }, index) => (
+          {stats.map(({ label, number }, index) => (
             <>
               <VStack justify={"center"} align={"center"} key={label}>
                 <Text
@@ -197,7 +148,7 @@ const HouseStats = () => {
                       fontSize={"17px"}
                       color={"green.500"}
                     >
-                      {percentage}
+                      {number}
                     </Text>
                   </HStack>
                 </Box>
@@ -205,6 +156,100 @@ const HouseStats = () => {
             </>
           ))}
         </HStack>
+
+        <HStack
+          justify={"center"}
+          align={"start"}
+          w={"100%"}
+          gap={"25px"}
+          mt={"5px"}
+        >
+          {" "}
+          {extraStats.map(({ label, number }, index) => (
+            <>
+              <VStack justify={"center"} align={"center"} key={label}>
+                <Text
+                  fontSize={["15px", "15px", "16px", "16px", "16px"]}
+                  fontFamily={"Raleway"}
+                  fontWeight={"500"}
+                >
+                  {label}
+                </Text>
+                <Box
+                  cursor={"pointer"}
+                  transition="transform, 0.3s ease-in-out, boxShadow 1s ease-in-out"
+                  w={["70px", "70px", "70px", "70px", "80px"]}
+                  h={"28px"}
+                  bg={"gray.200"}
+                  rounded={"10px"}
+                  zIndex={"1"}
+                >
+                  <HStack
+                    w={"100%"}
+                    h={"100%"}
+                    justify={"center"}
+                    align={"center"}
+                    textColor={"gray.500"}
+                  >
+                    <Text
+                      fontFamily={"sans-serif"}
+                      fontWeight={"100"}
+                      fontSize={"17px"}
+                      color={"gray.500"}
+                    >
+                      {number}
+                    </Text>
+                  </HStack>
+                </Box>
+              </VStack>
+            </>
+          ))}
+        </HStack>
+
+        <VStack w={"100%"} h={"65px"} mt={"10px"} rounded={"10px"} py={"10px"} justify={"center"} align={"center"}>
+          <HStack
+            justify={"center"}
+            align={"center"}
+            w={"100%"}
+            gap={"15px"}
+            mb={"5px"}
+          >
+            <HStack>
+              <FaBed fontSize={"13px"} as="span" />
+              <Text fontSize={"13px"}>Bed: 5</Text>
+            </HStack>
+
+            <HStack>
+              <FaHammer fontSize={"13px"} />
+              <Text fontSize={"13px"}>built: 2022</Text>
+            </HStack>
+
+
+            <HStack>
+            <IoIosResize fontSize={"13px"} />
+            <Text fontSize={"13px"}>Land: 800m2</Text>
+            </HStack>
+      
+          </HStack>
+          <HStack justify={"center"} align={"center"} w={"100%"} gap={"15px"}>
+
+          <HStack>
+          <FaHouse fontSize={"13px"} />
+            <Text fontSize={"13px"}>Type: Rental</Text>
+
+            </HStack>
+            <HStack>
+            <FaRuler fontSize={"13px"} />
+            <Text fontSize={"13px"}>Hight: 2022</Text>
+
+            </HStack>
+            <HStack>
+            <IoIosResize fontSize={"13px"} />
+            <Text fontSize={"13px"}>Tenants: 2</Text>
+            </HStack>
+     
+          </HStack>
+        </VStack>
       </Box>
     </>
   );

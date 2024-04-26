@@ -25,7 +25,7 @@ const About = () => {
         <HStack px={["10px", "20px", "20px", "50px", "50px"]} gap={"20px"}>
           <Image src={dimond} width={50} height={100} />
           <Text
-            fontSize={["30px", "30px", "30px", "50px", "50px"]}
+            fontSize={["30px", "30px", "30px", "50px", "70px"]}
             fontFamily={"Raleway"}
             fontWeight={"500"}
           >
@@ -35,7 +35,7 @@ const About = () => {
 
         <Text
           px={["50px", "50px", "50px", "115px", "115px"]}
-          fontSize={["16px", "16px", "20px", "20px", "30px"]}
+          fontSize={["16px", "16px", "20px", "20px", "27px"]}
           fontFamily={"Raleway"}
           mt={["40px", "40px", "50px", "50px", "50px"]}
           w={["100%", "90%", "80%", "70%", "70%"]}
@@ -50,8 +50,8 @@ const About = () => {
 
       <HStack
         px={["10px", "10px", "10px", "50px", "50px"]}
-        w={"70%"}
-        align={"center"}
+        w={["100%", "100%", "100%", "100%", "70%"]}
+        align={"start"}
         justify={"center"}
         mt={"60px"}
         gap={["3", "3", "3", "3", "3"]}
