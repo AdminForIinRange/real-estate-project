@@ -111,10 +111,10 @@ const Listing = () => {
         justify={"center"}
         mt={"250px"}
       >
-        <HStack px={"50px"} gap={"20px"} textColor={"#393939"}>
+        <HStack px={"50px"} gap={"5px"} textColor={"#393939"} >
           <Image src={SwirlyStar} width={100} height={100} />
           <Text
-            fontSize={["30px", "30px", "30px", "50px", "70px"]}
+            fontSize={["40px", "40px", "40px", "50px", "70px"]}
             fontFamily={"Raleway"}
             fontWeight={"500"}
           >
@@ -123,9 +123,9 @@ const Listing = () => {
         </HStack>
       </HStack>
 
-      <HStack columnGap={"100px"} 
+      <HStack columnGap={["20px", "20px", "40px", "40px", "50px"]} 
       
-      rowGap={"100px"}px={"100px"} wrap={["wrap", "wrap", "wrap", "wrap", "wrap"]}
+      rowGap={["20px", "20px", "40px", "40px", "50px"]}px={["10px", "30px", "50px", "70px", "100px"]} wrap={["wrap", "wrap", "wrap", "wrap", "wrap"]}
    
         w={"100%"}
         h={"100%"}
@@ -140,7 +140,7 @@ const Listing = () => {
           }}
           transition={"all 0.3s ease-in-out"}
           h={"100%"}
-          w={"400px"}
+          w={["350px", "275px", "300px", "375px", "400px"]}
           shadow={"0px 0px 20px rgba(0,0,0,0.25)"}
           rounded={"10px"}
         >

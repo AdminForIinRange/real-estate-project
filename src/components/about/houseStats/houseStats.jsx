@@ -74,12 +74,12 @@ onMouseLeave={() => setDisplay(false)}
         rounded={"5px"}
         boxShadow={"0px 0px 20px rgba(0,0,0,0.50)"}
       >
-        { display ? <> <HStack
+        { display ? <> <HStack mt={"50px"}
          transition="all 0.3s ease"
           w={"100%"}
           h={"100%"}
-          align={"start"}
-          justify={"start"}
+          align={"end"}
+          justify={"center"}
           p={5}
           gap={"15px"}
         >
@@ -101,9 +101,9 @@ onMouseLeave={() => setDisplay(false)}
             bgRepeat={"no-repeat"}
             bgPos={["center", " center", "center", "center", "center "]}
             w={"75px"}
-            h={"75px"}
-            rounded={"10px"}
-            boxShadow={"0px 0px 20px rgba(0,0,0,0.50)"}
+            h={"55px"}
+            rounded={"5px"}
+          
           ></Box>
           <Box
             transition={"transform 0.3s ease-in-out"}
@@ -123,9 +123,9 @@ onMouseLeave={() => setDisplay(false)}
             bgRepeat={"no-repeat"}
             bgPos={["center", " center", "center", "center", "center "]}
             w={"75px"}
-            h={"75px"}
-            rounded={"10px"}
-            boxShadow={"0px 0px 20px rgba(0,0,0,0.50)"}
+            h={"55px"}
+            rounded={"5px"}
+          
           ></Box>
           <Box
             transition={"transform 0.3s ease-in-out"}
@@ -145,9 +145,9 @@ onMouseLeave={() => setDisplay(false)}
             bgRepeat={"no-repeat"}
             bgPos={["center", " center", "center", "center", "center "]}
             w={"75px"}
-            h={"75px"}
-            rounded={"10px"}
-            boxShadow={"0px 0px 20px rgba(0,0,0,0.50)"}
+            h={"55px"}
+            rounded={"5px"}
+           
           ></Box>
 
           <Box
@@ -168,9 +168,9 @@ onMouseLeave={() => setDisplay(false)}
             bgRepeat={"no-repeat"}
             bgPos={["center", " center", "center", "center", "center "]}
             w={"75px"}
-            h={"75px"}
-            rounded={"10px"}
-            boxShadow={"0px 0px 20px rgba(0,0,0,0.50)"}
+            h={"55px"}
+            rounded={"5px"}
+           
           ></Box>
         </HStack>
         

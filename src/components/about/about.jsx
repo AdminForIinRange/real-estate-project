@@ -23,7 +23,7 @@ const About = () => {
   return (
     <>
       <Box mt={"250px"}>
-        <HStack px={"50px"} gap={"20px"}>
+        <HStack px={"50px"} gap={"5px"}>
           <Image src={dimond} width={50} height={100} />
           <Text
             fontSize={["30px", "30px", "30px", "50px", "70px"]}
