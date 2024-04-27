@@ -19,16 +19,92 @@ import {
 import Image from "next/image";
 
 import SwirlyStar from "@/Svg/SwirlyStar.svg";
-import { FaArrowRight, FaArrowUp } from "react-icons/fa6";
+import { FaArrowRight, FaArrowUp, FaExpand } from "react-icons/fa6";
 import { FaBed } from "react-icons/fa";
 import { FaShower } from "react-icons/fa";
 import { LuBoxSelect } from "react-icons/lu";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { useState } from "react";
 
 const Listing = () => {
+
+    const Featured = [
+        {
+          id: 1,
+          imgUrl:
+            "https://source.unsplash.com/white-and-brown-concrete-building-under-blue-sky-during-daytime-_TPTXZd9mOo",
+          Price: "$1,542,964",
+          address: "123 Main St",
+          change: "9%",
+          bed: "2",
+          bathrooms: "2",
+          size:"100",
+          onHover: true
+        },
+        {
+          id: 2,
+          imgUrl:
+            "https://source.unsplash.com/white-and-brown-concrete-building-under-blue-sky-during-daytime-5QLCohwVndQ",
+          Price: "$742,011",
+          address: "123 Main St",
+          change: "3%",
+          bed: "2",
+          bathrooms: "2",
+          size:"100",
+          onHover: true
+        },
+        ,
+        {
+          id: 3,
+          imgUrl:
+            "https://source.unsplash.com/brown-and-white-wooden-house-near-green-trees-during-daytime-2gDwlIim3Uw",
+          Price: "$1,242,825",
+          address: "123 Main St",
+          change: "5%",
+          bed: "2",
+          bathrooms: "2",
+          size:"100",
+          onHover: true
+        },
+        {
+          id: 4,
+          imgUrl:
+            "https://source.unsplash.com/white-and-blue-swimming-pool-Id7u0EkTjBE",
+    
+          Price: "$1,442,616",
+          address: "123 Main St",
+          change: "6%",
+          bed: "2",
+          bathrooms: "2",
+          size:"100",
+          onHover: true
+        },
+        {
+            id: 5,
+            imgUrl:
+              "https://source.unsplash.com/brown-and-white-concrete-building-MAnVoJlQUvg",
+      
+            Price: "$1,442,616",
+            change: "6%",
+            bed: "2",
+            bathrooms: "2",
+            size:"800m",
+            address:"123 Main St",
+            onHover: true
+          },
+  
+
+
+
+
+
+
+       
+      ];
+      const [expandedIndex, setExpandedIndex] = useState(null);
   return (
     <>
-      <HStack
+      <HStack 
         w={"100%"}
         h={"100%"}
         align={"center"}
@@ -47,7 +123,10 @@ const Listing = () => {
         </HStack>
       </HStack>
 
-      <HStack
+      <HStack columnGap={"100px"} 
+      
+      rowGap={"100px"}px={"100px"} wrap={["wrap", "wrap", "wrap", "wrap", "wrap"]}
+   
         w={"100%"}
         h={"100%"}
         align={"center"}
@@ -55,36 +134,60 @@ const Listing = () => {
         mt={"100px"}
       >
         {" "}
-        <Box
-          h={"400px"}
+       { Featured.map(({id, imgUrl, Price, change, bed, bathrooms, size, address}, index) => ( <Box key={id}
+          _hover={{
+            transform: "scale(1.05)",
+          }}
+          transition={"all 0.3s ease-in-out"}
+          h={"100%"}
           w={"400px"}
           shadow={"0px 0px 20px rgba(0,0,0,0.25)"}
           rounded={"10px"}
         >
           <Box
-            h={"60%"}
+             onMouseEnter={() => setExpandedIndex(index)}
+             onMouseLeave={() => setExpandedIndex(null)}
+            transition={"all 0.3s ease-in-out"}
+            _hover={{
+              height: "250px",
+            }}
+            h={"200px"}
             w={"100%"}
             shadow={"0px 0px 20px rgba(0,0,0,0.25)"}
             rounded={"10px"}
-            bgImage={
-              "https://source.unsplash.com/brown-and-white-concrete-building-MAnVoJlQUvg"
-            }
+            bgImage={`${imgUrl}`}
             bgSize={"cover"}
             bgPos={["center", " center", "center", "center", "center"]}
-          ></Box>
-          <Box
-            w={"100%"}
-            shadow={"0px 0px 20px rgba(0,0,0,0.25)"}
-            p={"10px"}
-            px={"20px"}
           >
-            <HStack>
+               {expandedIndex === index && (
+              <HStack
+                transition={"all 0.3s ease-in-out"}
+                w={"100%"}
+                h={"100%"}
+                justify={"end"}
+                align={"start"}
+                p={5}
+                cursor={"pointer"}
+               
+              >
+                {" "}
+
+                <Box >
+                <FaExpand fontSize={"20px"} color="white"  />{" "}    
+                </Box>
+                
+              </HStack>
+            ) }
+            
+          </Box>
+          <Box w={"100%"} h={"100%"} p={"10px"} px={"20px"}>
+            <HStack w={"100%"} justify={"left"} align={"center"} >
               <Text
                 fontSize={["28px", "28px", "28px", "35px", "40px"]}
                 fontWeight={"400"}
               >
                 {" "}
-                $1,542,000
+               {Price}
               </Text>
               <Box
                 cursor={"pointer"}
@@ -109,7 +212,7 @@ const Listing = () => {
                     fontSize={"17px"}
                     color={"#197C00"}
                   >
-                    1.5%
+                  {change}
                   </Text>
                 </HStack>
               </Box>
@@ -118,10 +221,10 @@ const Listing = () => {
             <Text
               mb={"5px"}
               fontSize={["12px", "12px", "16px", "18px", "18px"]}
-              fontWeight={"500"}
+              fontWeight={"400"}
             >
               {" "}
-              2427 Sunburst Drive
+              {address}
             </Text>
 
             <HStack gap={"10px"}>
@@ -131,7 +234,7 @@ const Listing = () => {
                 fontWeight={"500"}
               >
                 {" "}
-                3
+              {bed}
               </Text>
 
               <VStack></VStack>
@@ -146,7 +249,7 @@ const Listing = () => {
                 fontWeight={"500"}
               >
                 {" "}
-                2
+              {bathrooms}
               </Text>
 
               <Center height="40px">
@@ -158,20 +261,12 @@ const Listing = () => {
                 fontWeight={"500"}
               >
                 {" "}
-                300m<sup>2</sup>
+              {size}<sup>2</sup>
               </Text>
-              <HStack w={"100%"} justify={"end"} align={"center"} h={"100%"}  
-                  textAlign={"right"}
-                  fontSize={["10px", "12px", "12px", "16px", "25px"]}
-                  fontWeight={"300"} >
-                
-               
-                   <Icon as={FaArrowRightLong} />{" "}
-            
-              </HStack>
+             
             </HStack>
           </Box>
-        </Box>
+        </Box> ))}
       </HStack>
     </>
   );
