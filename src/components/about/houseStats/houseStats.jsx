@@ -48,15 +48,24 @@ const HouseStats = () => {
     ,
   ];
 
-  const [flexibleBgImage, setFlexibleBgImage] = useState("https://source.unsplash.com/white-concrete-building-under-blue-sky-during-daytime-mR1CIDduGLc");
+  const [flexibleBgImage, setFlexibleBgImage] = useState(
+    "https://source.unsplash.com/white-concrete-building-under-blue-sky-during-daytime-mR1CIDduGLc"
+  );
+
+
+  const [display, setDisplay] = useState(false);
+
 
   return (
     <>
-      <Box transition={"transform 0.3s ease-in-out"}
+      <Box
 
+
+
+onMouseEnter={() => setDisplay(true)}
+onMouseLeave={() => setDisplay(false)}
+        transition={"transform 0.3s ease-in-out"}
         bgImage={flexibleBgImage}
-        
-        
         bgSize={"cover"}
         bgRepeat={"no-repeat"}
         bgPos={["center", " center", "center", "center", "center "]}
@@ -65,65 +74,107 @@ const HouseStats = () => {
         rounded={"5px"}
         boxShadow={"0px 0px 20px rgba(0,0,0,0.50)"}
       >
-        <HStack w={"100%"} h={"100%"} align={"start"} justify={"start"} p={5}  gap={"15px"}>
-<Box  transition={"transform 0.3s ease-in-out"} _hover={{
-  transform: "scale(1.1)",
-}}       cursor={"pointer"}         onClick={() => setFlexibleBgImage("https://source.unsplash.com/white-concrete-building-under-blue-sky-during-daytime-mR1CIDduGLc")} bgImage={
-          "https://source.unsplash.com/white-concrete-building-under-blue-sky-during-daytime-mR1CIDduGLc"
-        }
-        bgSize={"cover"}
-        bgRepeat={"no-repeat"}
-        bgPos={["center", " center", "center", "center", "center "]}
-        w={"75px"}
-        h={"75px"}
-        rounded={"10px"}
-        boxShadow={"0px 0px 20px rgba(0,0,0,0.50)"} >
+        { display ? <> <HStack
+         transition="all 0.3s ease"
+          w={"100%"}
+          h={"100%"}
+          align={"start"}
+          justify={"start"}
+          p={5}
+          gap={"15px"}
+        >
+          <Box
+            transition={"transform 0.3s ease-in-out"}
+            _hover={{
+              transform: "scale(1.1)",
+            }}
+            cursor={"pointer"}
+            onClick={() =>
+              setFlexibleBgImage(
+                "https://source.unsplash.com/white-concrete-building-under-blue-sky-during-daytime-mR1CIDduGLc"
+              )
+            }
+            bgImage={
+              "https://source.unsplash.com/white-concrete-building-under-blue-sky-during-daytime-mR1CIDduGLc"
+            }
+            bgSize={"cover"}
+            bgRepeat={"no-repeat"}
+            bgPos={["center", " center", "center", "center", "center "]}
+            w={"75px"}
+            h={"75px"}
+            rounded={"10px"}
+            boxShadow={"0px 0px 20px rgba(0,0,0,0.50)"}
+          ></Box>
+          <Box
+            transition={"transform 0.3s ease-in-out"}
+            _hover={{
+              transform: "scale(1.1)",
+            }}
+            cursor={"pointer"}
+            onClick={() =>
+              setFlexibleBgImage(
+                "https://source.unsplash.com/round-white-wooden-table-near-kitchen-island-MyeOnGcibCQ"
+              )
+            }
+            bgImage={
+              "https://source.unsplash.com/round-white-wooden-table-near-kitchen-island-MyeOnGcibCQ"
+            }
+            bgSize={"cover"}
+            bgRepeat={"no-repeat"}
+            bgPos={["center", " center", "center", "center", "center "]}
+            w={"75px"}
+            h={"75px"}
+            rounded={"10px"}
+            boxShadow={"0px 0px 20px rgba(0,0,0,0.50)"}
+          ></Box>
+          <Box
+            transition={"transform 0.3s ease-in-out"}
+            _hover={{
+              transform: "scale(1.1)",
+            }}
+            cursor={"pointer"}
+            onClick={() =>
+              setFlexibleBgImage(
+                "https://source.unsplash.com/brown-wooden-kitchen-cabinet-JDBVXignFdA"
+              )
+            }
+            bgImage={
+              "https://source.unsplash.com/brown-wooden-kitchen-cabinet-JDBVXignFdA"
+            }
+            bgSize={"cover"}
+            bgRepeat={"no-repeat"}
+            bgPos={["center", " center", "center", "center", "center "]}
+            w={"75px"}
+            h={"75px"}
+            rounded={"10px"}
+            boxShadow={"0px 0px 20px rgba(0,0,0,0.50)"}
+          ></Box>
 
-</Box>
-<Box   transition={"transform 0.3s ease-in-out"} _hover={{
-  transform: "scale(1.1)",
-}}      cursor={"pointer"}         onClick={() => setFlexibleBgImage("https://source.unsplash.com/round-white-wooden-table-near-kitchen-island-MyeOnGcibCQ")} bgImage={
-          "https://source.unsplash.com/round-white-wooden-table-near-kitchen-island-MyeOnGcibCQ"
-        }
-        bgSize={"cover"}
-        bgRepeat={"no-repeat"}
-        bgPos={["center", " center", "center", "center", "center "]}
-        w={"75px"}
-        h={"75px"}
-        rounded={"10px"}
-         boxShadow={"0px 0px 20px rgba(0,0,0,0.50)"} >
-
-</Box>
-<Box   transition={"transform 0.3s ease-in-out"} _hover={{
-  transform: "scale(1.1)",
-}}       cursor={"pointer"}         onClick={() => setFlexibleBgImage("https://source.unsplash.com/brown-wooden-kitchen-cabinet-JDBVXignFdA")}  bgImage={
-          "https://source.unsplash.com/brown-wooden-kitchen-cabinet-JDBVXignFdA"
-        }
-        bgSize={"cover"}
-        bgRepeat={"no-repeat"}
-        bgPos={["center", " center", "center", "center", "center "]}
-        w={"75px"}
-        h={"75px"}
-        rounded={"10px"}
-         boxShadow={"0px 0px 20px rgba(0,0,0,0.50)"} >
-
-</Box>
-
-<Box  transition={"transform 0.3s ease-in-out"} _hover={{
-  transform: "scale(1.1)",
-}}        cursor={"pointer"}         onClick={() => setFlexibleBgImage("https://source.unsplash.com/white-ceramic-bathtub-near-black-textile-mdwOo5PeXpE")} bgImage={
-          "https://source.unsplash.com/white-ceramic-bathtub-near-black-textile-mdwOo5PeXpE"
-        }
-        bgSize={"cover"}
-        bgRepeat={"no-repeat"}
-        bgPos={["center", " center", "center", "center", "center "]}
-        w={"75px"}
-        h={"75px"}
-        rounded={"10px"}
-         boxShadow={"0px 0px 20px rgba(0,0,0,0.50)"} >
-
-</Box>
+          <Box
+            transition={"transform 0.3s ease-in-out"}
+            _hover={{
+              transform: "scale(1.1)",
+            }}
+            cursor={"pointer"}
+            onClick={() =>
+              setFlexibleBgImage(
+                "https://source.unsplash.com/white-ceramic-bathtub-near-black-textile-mdwOo5PeXpE"
+              )
+            }
+            bgImage={
+              "https://source.unsplash.com/white-ceramic-bathtub-near-black-textile-mdwOo5PeXpE"
+            }
+            bgSize={"cover"}
+            bgRepeat={"no-repeat"}
+            bgPos={["center", " center", "center", "center", "center "]}
+            w={"75px"}
+            h={"75px"}
+            rounded={"10px"}
+            boxShadow={"0px 0px 20px rgba(0,0,0,0.50)"}
+          ></Box>
         </HStack>
+        
+        </>: <></>}
       </Box>
 
       <Box
@@ -284,9 +335,7 @@ const HouseStats = () => {
             w={"100%"}
             gap={"15px"}
             mb={"5px"}
-          >
-            
-          </HStack>
+          ></HStack>
         </VStack>
       </Box>
     </>

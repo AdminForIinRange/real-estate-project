@@ -23,7 +23,7 @@ const HeroTextInput = () => {
         as={"span"}
         fontFamily={"Raleway"}
         w={"100%"}
-        color={["gray", "blue", "green", "red", "#393939"]}
+        color={"#393939"}
         fontWeight={"500"}
       >
         Unlock Success: Co-Own for Max Returns, Min Risk!

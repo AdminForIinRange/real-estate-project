@@ -64,13 +64,15 @@ const Hero = () => {
             mt={"60px"}
             pr={["0px", "0px", "0px", "15px", "50px"]}
           >
-            <HouseVerticalBanner />
+           <HouseVerticalBanner /> 
           </VStack>
         </VStack>
 
         <Spacer />
         <HStack w={["90%", "80%", "50%", "80%", "50%"]} h={"100%"}>
-          <FeaturedHouseBox />
+
+          
+        { !isTablet ?  <FeaturedHouseBox />  : null}
         </HStack>
       </HStack>
     </>
