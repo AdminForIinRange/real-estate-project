@@ -29,6 +29,27 @@ import Fan from "@/Svg/Fan.svg";
 import subStar from "@/Svg/subStar.svg";
 
 const About = () => {
+
+ const benefits = [
+   {
+    image:curvedFan,
+    title:"Dividends",
+    sub:"Regular income from property rentals, providing steady cash flow."
+
+   },
+   {
+    image:Fan,
+    title:"Less Risk",
+    sub:" Smaller risk for financial loss due to shared responsibility and diversified ownership"
+
+   },
+   {
+    image:subStar,
+    title:"Ownership",
+    sub:" Legal right to possess, control, and benefit from property depending on owned percentage."
+
+   },
+ ] 
   return (
     <>
       <Box mt={"250px"}>
@@ -82,8 +103,10 @@ const About = () => {
           gap={["13px", "13px", "13px", "13px", "20px"]}
           wrap={["wrap", "wrap", "nowrap", "nowrap", "nowrap"]}
           h={"100%"}
+          fontFamily={"Raleway"}
         >
-          <Box
+          { benefits.map(({image, title, sub}, index) => (
+          <Box key={title}
         
             w={["100%", "100%", "100%", "100%", "100%"]}
             rounded={"10px"}
@@ -92,7 +115,7 @@ const About = () => {
             p={"20px"}
           >
             <Box w={["35px", "35px", "50px", "50px", "100px"]} >
-              <Image src={subStar} />
+              <Image src={image} />
             </Box>
 
             <Text
@@ -101,63 +124,16 @@ const About = () => {
               mt={"5px"}
               
             > 
-              Dividends
+              {title}
             </Text>
             <Text
-              fontWeight={"200"}
+              fontWeight={"300"}
               fontSize={["16px", "15px", "15px", "13px", "16px"]}
             >
-              Regular income from property rentals, providing steady cash flow.
+             {sub}
             </Text>
-          </Box>
-          <Box
-            w={["100%", "100%", "100%", "100%", "100%"]}
-            rounded={"10px"}
-            h={"200px"}
-            shadow={"0px 0px 20px rgba(0,0,0,0.25)"}
-            p={"20px"}
-          >
-            <Box w={["35px", "35px", "50px", "50px", "100px"]}>
-              <Image src={Fan} />
-            </Box>
-
-            <Text
-              fontWeight={"bold"}
-               fontSize={["20px", "20px", "20px", "16px", "20px"]}  mt={"5px"}
-            >
-             Ownership
-            </Text>
-            <Text
-              fontWeight={"200"}
-               fontSize={["16px", "15px", "15px", "13px", "16px"]}
-            >
-             Legal right to possess, control, and benefit from property depending on owned percentage.
-            </Text>
-          </Box>
-          <Box
-            w={["100%", "100%", "100%", "100%", "100%"]}
-            rounded={"10px"}
-            h={"200px"}
-            shadow={"0px 0px 20px rgba(0,0,0,0.25)"}
-            p={"20px"}
-          >
-            <Box w={["35px", "35px", "50px", "50px", "100px"]}>
-              <Image src={curvedFan} />
-            </Box>
-
-            <Text
-              fontWeight={"bold"}
-               fontSize={["20px", "20px", "20px", "16px", "20px"]}   mt={"5px"}
-            >
-              Less Risk
-            </Text>
-            <Text
-              fontWeight={"200"}
-               fontSize={["16px", "15px", "15px", "13px", "16px"]}
-            >
-              Smaller risk for financial loss due to shared responsibility and diversified ownership
-            </Text>
-          </Box>{" "}
+          </Box>))}
+          
         </HStack>
       </HStack>
     </>

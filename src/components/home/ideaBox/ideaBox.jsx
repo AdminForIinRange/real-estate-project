@@ -62,7 +62,7 @@ const IdeaBox = () => {
             {idea.title}{" "}
           </Text>
           <Text
-            fontWeight={"200"}
+            fontWeight={"400"}
             fontSize={["10px", "12px", "15px", "13px", "16px"]}
           >
             {idea.text}{" "}

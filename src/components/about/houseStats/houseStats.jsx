@@ -150,28 +150,7 @@ onMouseLeave={() => setDisplay(false)}
            
           ></Box>
 
-          <Box
-            transition={"transform 0.3s ease-in-out"}
-            _hover={{
-              transform: "scale(1.1)",
-            }}
-            cursor={"pointer"}
-            onClick={() =>
-              setFlexibleBgImage(
-                "https://source.unsplash.com/white-ceramic-bathtub-near-black-textile-mdwOo5PeXpE"
-              )
-            }
-            bgImage={
-              "https://source.unsplash.com/white-ceramic-bathtub-near-black-textile-mdwOo5PeXpE"
-            }
-            bgSize={"cover"}
-            bgRepeat={"no-repeat"}
-            bgPos={["center", " center", "center", "center", "center "]}
-            w={"75px"}
-            h={"55px"}
-            rounded={"5px"}
-           
-          ></Box>
+        
         </HStack>
         
         </>: <></>}
