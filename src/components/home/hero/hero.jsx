@@ -50,7 +50,7 @@ const Hero = () => {
             align={"start"}
             justify={"right"}
             mt={"60px"}
-            gap={["13px", "13px", "13px", "13px", "20px"]}
+            gap={["7px", "10px", "13px", "13px", "20px"]}
             h={"100%"}
             pr={["0px", "0px", "0px", "15px", "50px"]}
           >
