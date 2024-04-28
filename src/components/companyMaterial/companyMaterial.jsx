@@ -112,7 +112,7 @@ const CompanyMaterial = () => {
                   {p}
                 </Text>
 
-                <HStack w={"100%"} h={"100%"} align={"end"} justify={"center"}>
+                <HStack w={"100%"} h={"100%"} align={"end"} justify={"center"} mb={"5px"}>
                   <HStack
                     w={"100%"}
                     h={"100%"}
