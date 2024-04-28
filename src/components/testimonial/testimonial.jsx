@@ -31,7 +31,7 @@ const Testimonial = () => {
       image:
         "https://source.unsplash.com/woman-wearing-black-jacket-ySTdW42Y7og",
       review:
-        "Partnering with [Your Company Name] led to incredible returns. Their expert guidance and transparent approach made me feel confident. Highly recommended!",
+        "Partnering with CoInvest led to incredible returns. Their expert guidance and transparent approach made me feel confident. Highly recommended!",
     },
     {
       name: "Bob Johnson",
@@ -39,7 +39,7 @@ const Testimonial = () => {
       image:
         "https://source.unsplash.com/man-wearing-white-v-neck-shirt-iFgRcqHznqg",
       review:
-        "Thanks to [Your Company Name], investing in real estate was easy and accessible. Co-ownership truly is the smart way to invest!",
+        "Thanks to CoInvest, investing in real estate was easy and accessible. Co-ownership truly is the smart way to invest!",
     },
     {
       name: "Alice Brown",
@@ -47,7 +47,7 @@ const Testimonial = () => {
       image:
         "https://source.unsplash.com/woman-in-white-crew-neck-shirt-smiling-IF9TK5Uy-KI",
       review:
-        "Diversifying my portfolio with [Your Company Name] was a game-changer. Their co-ownership model minimized risk and maximized returns. Grateful for their expertise!",
+        "Diversifying my portfolio with CoInvest was a game-changer. Their co-ownership model minimized risk and maximized returns. Grateful for their expertise!",
     },
     {
       name: "Jane Doe",
@@ -55,7 +55,7 @@ const Testimonial = () => {
       image:
         "https://source.unsplash.com/man-wearing-henley-top-portrait-7YVZYZeITc8",
       review:
-        "Thanks to [Your Company Name], I now enjoy passive income without the hassle of property management. It's been a game-changer for me.",
+        "Thanks to CoInvest, I now enjoy passive income without the hassle of property management. It's been a game-changer for me.",
     },
     {
       name: "Alice Brown",
@@ -101,12 +101,17 @@ const Testimonial = () => {
          wrap={["wrap", "wrap", "wrap", "wrap", "wrap"]}
         >
           {testimonials.map(({ name, role, image, review }, index) => (
-            <Box
+            <Box 
+
+            _hover={{
+              boxShadow: "0px 0px 20px gray",
+            }}
+            transition={"all 0.3s ease"}
               key={index}
-              w={["170px", "500px", "500px", "325px", "500px"]}
+              w={["170px", "250px", "500px", "325px", "500px"]}
               
-              h={["225px", "300px", "290px", "250px", "250px"]}
-              maxW={["200px", "200px", "250px", "100%", "100%"]}
+              h={["225px", "250px", "290px", "250px", "250px"]}
+              maxW={["200px", "300px", "250px", "100%", "100%"]}
               shadow={"0px 0px 20px rgba(0,0,0,0.25)"}
               p={["10px", "13px", "16px", "18px", "20px"]}
               rounded={"10px"}

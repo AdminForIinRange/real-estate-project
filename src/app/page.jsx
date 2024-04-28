@@ -6,6 +6,8 @@ import About from "@/components/about/about";
 import Listing from "@/components/listings/listing";
 import Testimonial from "@/components/testimonial/testimonial";
 import CompanyMaterial from "@/components/companyMaterial/companyMaterial";
+import Footer from "@/components/footer/footer";
+import Faq from "@/components/faq/faq";
 const Home = () => {
   return (
     <>
@@ -31,6 +33,15 @@ const Home = () => {
         <Box>
           <CompanyMaterial />
         </Box>
+
+        <Box>
+          <Faq />
+        </Box>
+
+        <Box>
+          <Footer />
+        </Box>
+
       </Box>
     </>
   );
