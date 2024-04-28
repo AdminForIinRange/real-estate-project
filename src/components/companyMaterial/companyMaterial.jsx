@@ -27,12 +27,18 @@ const CompanyMaterial = () => {
   const PdfDownload = [
     {
       id: 1,
+      title:"Ownership Structure and Responsibilities",
+      p:"This section defines the rights and duties of each owner or partner within the company, including decision-making authority and financial obligations."
     },
     {
       id: 2,
+      title:"Investment Terms and Conditions",
+      p:"It outlines the terms for investing in the company, such as capital contributions, profit-sharing arrangements, and procedures for adding or exiting investors."
     },
     {
       id: 3,
+      title:"Management and Governance",
+      p:"This part specifies how the company will be managed and governed, including the roles of managers, decision-making processes, and mechanisms for resolving disputes."
     },
   ];
   return (
