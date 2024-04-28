@@ -125,7 +125,8 @@ const Listing = () => {
 
       <HStack columnGap={["20px", "20px", "40px", "40px", "50px"]}  
       
-      rowGap={["20px", "20px", "40px", "40px", "50px"]}px={["10px", "30px", "50px", "70px", "100px"]} wrap={["wrap", "wrap", "wrap", "wrap", "wrap"]}
+      rowGap={["20px", "20px", "40px", "40px", "50px"]}
+      px={["10px", "30px", "50px", "70px", "100px"]} wrap={["wrap", "wrap", "wrap", "wrap", "wrap"]}
    
         w={"100%"}
         h={"100%"}
@@ -137,7 +138,7 @@ const Listing = () => {
        { Featured.map(({id, imgUrl, Price, change, bed, bathrooms, size, address}, index) => ( <Box key={id}
           _hover={{
             transform: "scale(1.05)",
-            boxShadow: "0px 0px 20px rgba(0,0,0,1)",
+          
           }}
           transition={"all 0.3s ease-in-out"}
           h={"100%"}
@@ -159,6 +160,8 @@ const Listing = () => {
             bgImage={`${imgUrl}`}
             bgSize={"cover"}
             bgPos={["center", " center", "center", "center", "center"]}
+       borderBottomRadius={"10px"}
+       borderTopRadius={"0px"}
           >
                {expandedIndex === index && (
               <HStack

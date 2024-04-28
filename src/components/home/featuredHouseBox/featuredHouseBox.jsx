@@ -65,7 +65,7 @@ const FeaturedHouseBox = () => {
               fontSize={["12px", "16px", "20px", "30px", "30px"]}
               fontFamily={"Raleway"}
               w={"100%"}
-              fontWeight={"700"}
+              fontWeight={"600"}
             >
               Featured
             </Text>

@@ -19,7 +19,7 @@ const BenefitsinCoOwnership = () => {
   return (
     <>
 
-<HStack px={"50px"} gap={"5px"}>
+<HStack px={"5canv0px"} gap={"5px"}>
          
           <Text
             fontSize={["30px", "30px", "30px", "50px", "70px"]}

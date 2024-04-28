@@ -4,6 +4,7 @@ import React from "react";
 import Hero from "@/components/home/hero/hero";
 import About from "@/components/about/about";
 import Listing from "@/components/listings/listing";
+import Testimonial from "@/components/testimonial/testimonial";
 const Home = () => {
   return (
     <>
@@ -21,6 +22,9 @@ const Home = () => {
 
         <Box>
           <Listing />
+        </Box>
+        <Box>
+          <Testimonial />
         </Box>
       </Box>
     </>
