@@ -22,9 +22,7 @@ import Image from "next/image";
 import { FaQuoteLeft } from "react-icons/fa";
 import { FaQuoteRight } from "react-icons/fa";
 const Testimonial = () => {
-    
-    
-    const testimonials = [
+  const testimonials = [
     {
       name: "Mary Smith",
       role: "Landlord",
@@ -64,8 +62,8 @@ const Testimonial = () => {
         "https://source.unsplash.com/man-standing-near-white-wall-d1UPkiFd04A",
       review:
         "Took my portfolio to the next level. Their platform offers access to high-quality properties and a supportive community of investors. Great experience!",
-    }
-];
+    },
+  ];
 
   return (
     <>
@@ -88,9 +86,9 @@ const Testimonial = () => {
         </HStack>
       </HStack>
 
-      <HStack w={"100%"} h={"100%"} align={"center"} justify={"center"} >
+      <HStack w={"100%"} h={"100%"} align={"center"} justify={"center"}>
         <HStack
-        fontFamily={"Raleway"}
+          fontFamily={"Raleway"}
           w={"100%"}
           h={"100%"}
           align={"start"}
@@ -98,18 +96,16 @@ const Testimonial = () => {
           gap={["10px", "8px", "12px", "15px", "20px"]}
           mt={["85px", "85px", "150px", "250px", "250px"]}
           px={["0px", "10px", "30px", "40px", "60px"]}
-         wrap={["wrap", "wrap", "wrap", "wrap", "wrap"]}
+          wrap={["wrap", "wrap", "wrap", "wrap", "wrap"]}
         >
           {testimonials.map(({ name, role, image, review }, index) => (
-            <Box 
-
-            _hover={{
-              boxShadow: "0px 0px 20px gray",
-            }}
-            transition={"all 0.3s ease"}
+            <Box
+              _hover={{
+                boxShadow: "0px 0px 20px gray",
+              }}
+              transition={"all 0.3s ease"}
               key={index}
               w={["170px", "250px", "500px", "325px", "500px"]}
-              
               h={["225px", "250px", "290px", "250px", "250px"]}
               maxW={["200px", "300px", "250px", "100%", "100%"]}
               shadow={"0px 0px 20px rgba(0,0,0,0.25)"}
@@ -130,7 +126,6 @@ const Testimonial = () => {
                     fontSize={["12px", "13px", "16px", "18px", "20px"]}
                     fontFamily={"Raleway"}
                     fontWeight={"500"}
-                   
                     color={"#393939"}
                   >
                     {name}
@@ -139,7 +134,6 @@ const Testimonial = () => {
                     fontSize={["9px", "10px", "14px", "15px", "16px"]}
                     fontFamily={"Raleway"}
                     fontWeight={"700"}
-                   
                     color={"#393939"}
                   >
                     {role}
@@ -158,7 +152,12 @@ const Testimonial = () => {
                 <FaQuoteLeft />{" "}
               </HStack>
 
-              <Text  fontWeight={"400"}   fontSize={["10px", "11px", "14px", "15px", "16px"]} >{review}</Text>
+              <Text
+                fontWeight={"400"}
+                fontSize={["10px", "11px", "14px", "15px", "16px"]}
+              >
+                {review}
+              </Text>
 
               <HStack mt={"10px"} w={"100%"} justify={"end"} align={"end"}>
                 <FaQuoteRight fontSize={"16px"} />{" "}
@@ -167,8 +166,6 @@ const Testimonial = () => {
           ))}
         </HStack>
       </HStack>
-
-
     </>
   );
 };

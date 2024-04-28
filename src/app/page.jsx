@@ -41,7 +41,6 @@ const Home = () => {
         <Box>
           <Footer />
         </Box>
-
       </Box>
     </>
   );

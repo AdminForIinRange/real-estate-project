@@ -29,27 +29,23 @@ import Fan from "@/Svg/Fan.svg";
 import subStar from "@/Svg/subStar.svg";
 
 const About = () => {
-
- const benefits = [
-   {
-    image:curvedFan,
-    title:"Dividends",
-    sub:"Regular income from property rentals, providing steady cash flow."
-
-   },
-   {
-    image:Fan,
-    title:"Less Risk",
-    sub:" Smaller risk for financial loss due to shared responsibility and diversified ownership"
-
-   },
-   {
-    image:subStar,
-    title:"Ownership",
-    sub:" Legal right to possess, control, and benefit from property depending on owned percentage."
-
-   },
- ] 
+  const benefits = [
+    {
+      image: curvedFan,
+      title: "Dividends",
+      sub: "Regular income from property rentals, providing steady cash flow.",
+    },
+    {
+      image: Fan,
+      title: "Less Risk",
+      sub: " Smaller risk for financial loss due to shared responsibility and diversified ownership",
+    },
+    {
+      image: subStar,
+      title: "Ownership",
+      sub: " Legal right to possess, control, and benefit from property depending on owned percentage.",
+    },
+  ];
   return (
     <>
       <Box mt={"250px"}>
@@ -93,7 +89,6 @@ const About = () => {
         align={["center", "center", "end", "end", "end"]}
         justify={["center", "center", "right", "right", "right"]}
         mt={"60px"}
-  
         h={"100%"}
       >
         <HStack
@@ -105,35 +100,34 @@ const About = () => {
           h={"100%"}
           fontFamily={"Raleway"}
         >
-          { benefits.map(({image, title, sub}, index) => (
-          <Box key={title}
-        
-            w={["100%", "100%", "100%", "100%", "100%"]}
-            rounded={"10px"}
-            h={"200px"}
-            shadow={"0px 0px 20px rgba(0,0,0,0.25)"}
-            p={"20px"}
-          >
-            <Box w={["35px", "35px", "50px", "50px", "100px"]} >
-              <Image src={image} />
-            </Box>
-
-            <Text
-              fontWeight={"bold"}
-              fontSize={["20px", "20px", "20px", "16px", "20px"]}
-              mt={"5px"}
-              
-            > 
-              {title}
-            </Text>
-            <Text
-              fontWeight={"300"}
-              fontSize={["16px", "15px", "15px", "13px", "16px"]}
+          {benefits.map(({ image, title, sub }, index) => (
+            <Box
+              key={title}
+              w={["100%", "100%", "100%", "100%", "100%"]}
+              rounded={"10px"}
+              h={"200px"}
+              shadow={"0px 0px 20px rgba(0,0,0,0.25)"}
+              p={"20px"}
             >
-             {sub}
-            </Text>
-          </Box>))}
-          
+              <Box w={["35px", "35px", "50px", "50px", "100px"]}>
+                <Image src={image} />
+              </Box>
+
+              <Text
+                fontWeight={"bold"}
+                fontSize={["20px", "20px", "20px", "16px", "20px"]}
+                mt={"5px"}
+              >
+                {title}
+              </Text>
+              <Text
+                fontWeight={"300"}
+                fontSize={["16px", "15px", "15px", "13px", "16px"]}
+              >
+                {sub}
+              </Text>
+            </Box>
+          ))}
         </HStack>
       </HStack>
     </>

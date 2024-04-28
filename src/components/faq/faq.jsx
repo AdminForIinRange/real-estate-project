@@ -15,34 +15,40 @@ const Faq = () => {
   const faqData = [
     {
       question: "What is CoInvest?",
-      answer: "CoInvest is a collaborative platform where individuals join forces to share ownership of properties, pooling resources for greater returns while spreading risk. It's a cooperative path to real estate success.",
+      answer:
+        "CoInvest is a collaborative platform where individuals join forces to share ownership of properties, pooling resources for greater returns while spreading risk. It's a cooperative path to real estate success.",
     },
     {
       question: "How does CoInvest work?",
-      answer: "CoInvest enables users to invest in real estate properties collectively. Members pool their resources to purchase properties, share ownership, and reap the benefits of rental income and property appreciation.",
+      answer:
+        "CoInvest enables users to invest in real estate properties collectively. Members pool their resources to purchase properties, share ownership, and reap the benefits of rental income and property appreciation.",
     },
     {
       question: "What are the benefits of using CoInvest?",
-      answer: "CoInvest offers several benefits, including shared financial responsibility, increased purchasing power, diversified real estate portfolio, and potential tax advantages. Additionally, it fosters collaborative decision-making and reduces individual risk.",
+      answer:
+        "CoInvest offers several benefits, including shared financial responsibility, increased purchasing power, diversified real estate portfolio, and potential tax advantages. Additionally, it fosters collaborative decision-making and reduces individual risk.",
     },
     {
       question: "How can I join CoInvest?",
-      answer: "Joining CoInvest is easy! Simply sign up on our platform, explore available investment opportunities, and connect with other investors to start co-owning properties together.",
+      answer:
+        "Joining CoInvest is easy! Simply sign up on our platform, explore available investment opportunities, and connect with other investors to start co-owning properties together.",
     },
     {
       question: "What types of properties does CoInvest focus on?",
-      answer: "CoInvest focuses on a variety of real estate properties, including residential homes, commercial buildings, vacation rentals, and more. Our goal is to offer diverse investment options to meet the needs of our members.",
+      answer:
+        "CoInvest focuses on a variety of real estate properties, including residential homes, commercial buildings, vacation rentals, and more. Our goal is to offer diverse investment options to meet the needs of our members.",
     },
     {
       question: "What happens if I want to sell my share of the property?",
-      answer: "If you decide to sell your share of the property, CoInvest provides mechanisms for exiting your investment. This may involve finding a buyer within the CoInvest community or selling your share back to the company, depending on the terms outlined in the co-ownership agreement.",
+      answer:
+        "If you decide to sell your share of the property, CoInvest provides mechanisms for exiting your investment. This may involve finding a buyer within the CoInvest community or selling your share back to the company, depending on the terms outlined in the co-ownership agreement.",
     },
     {
       question: "How does CoInvest handle property management?",
-      answer: "CoInvest typically appoints a professional property management team to handle day-to-day operations, including tenant screening, rent collection, maintenance, and repairs. This ensures efficient management and optimal performance of the properties.",
+      answer:
+        "CoInvest typically appoints a professional property management team to handle day-to-day operations, including tenant screening, rent collection, maintenance, and repairs. This ensures efficient management and optimal performance of the properties.",
     },
   ];
-  
 
   return (
     <>

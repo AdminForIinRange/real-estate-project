@@ -28,16 +28,16 @@ const Footer = () => {
           <Text fontSize="lg" fontWeight="bold" color={"black"}>
             Company
           </Text>
-          <Link href="#" fontSize="sm"  color={"#393939"}>
+          <Link href="#" fontSize="sm" color={"#393939"}>
             About Us
           </Link>
-          <Link href="#" fontSize="sm"  color={"#393939"}>
+          <Link href="#" fontSize="sm" color={"#393939"}>
             Contact Us
           </Link>
-          <Link href="#" fontSize="sm"  color={"#393939"}>
+          <Link href="#" fontSize="sm" color={"#393939"}>
             Privacy Policy
           </Link>
-          <Link href="#" fontSize="sm"  color={"#393939"}>
+          <Link href="#" fontSize="sm" color={"#393939"}>
             Terms of Service
           </Link>
         </Stack>
@@ -45,20 +45,19 @@ const Footer = () => {
           <Text fontSize="lg" fontWeight="bold" color={"black"}>
             Get Started
           </Text>
-          <Link href="/components" fontSize="sm"  color={"#393939"}>
-          Blog
-          </Link>
-         
-          <Link href="/components/loginForm" fontSize="sm"  color={"#393939"}>
-          Properties
+          <Link href="/components" fontSize="sm" color={"#393939"}>
+            Blog
           </Link>
 
-          <Link href="/components/loginForm" fontSize="sm"  color={"#393939"}>
-          Add Listing
+          <Link href="/components/loginForm" fontSize="sm" color={"#393939"}>
+            Properties
           </Link>
 
-            
-          <Link href="/" fontSize="sm"  color={"black"} >
+          <Link href="/components/loginForm" fontSize="sm" color={"#393939"}>
+            Add Listing
+          </Link>
+
+          <Link href="/" fontSize="sm" color={"black"}>
             Contact
           </Link>
         </Stack>
@@ -72,19 +71,19 @@ const Footer = () => {
               href="https://github.com/AdminForIinRange"
               mr={2}
             >
-              <Icon as={FaGithub} boxSize={6}  color={"#393939"} />
+              <Icon as={FaGithub} boxSize={6} color={"#393939"} />
             </Link>
             <Link
               target="_blank"
               href="https://www.linkedin.com/in/anjesh-bhattarai/"
               mr={2}
             >
-              <Icon as={FaLinkedin} boxSize={6}  color={"#393939"} />
+              <Icon as={FaLinkedin} boxSize={6} color={"#393939"} />
             </Link>
           </Flex>
         </Stack>
       </Flex>
-      <Text mt={8} textAlign="center" fontSize="sm"  color={"#393939"}>
+      <Text mt={8} textAlign="center" fontSize="sm" color={"#393939"}>
         © 2024 Anjesh Bhattarai
       </Text>
     </Box>
