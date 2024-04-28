@@ -5,6 +5,7 @@ import Hero from "@/components/home/hero/hero";
 import About from "@/components/about/about";
 import Listing from "@/components/listings/listing";
 import Testimonial from "@/components/testimonial/testimonial";
+import CompanyMaterial from "@/components/companyMaterial/companyMaterial";
 const Home = () => {
   return (
     <>
@@ -25,6 +26,10 @@ const Home = () => {
         </Box>
         <Box>
           <Testimonial />
+        </Box>
+
+        <Box>
+          <CompanyMaterial />
         </Box>
       </Box>
     </>

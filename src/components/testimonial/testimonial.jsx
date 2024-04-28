@@ -22,7 +22,9 @@ import Image from "next/image";
 import { FaQuoteLeft } from "react-icons/fa";
 import { FaQuoteRight } from "react-icons/fa";
 const Testimonial = () => {
-  const topTestimonial = [
+    
+    
+    const testimonials = [
     {
       name: "Mary Smith",
       role: "Landlord",
@@ -47,9 +49,6 @@ const Testimonial = () => {
       review:
         "Diversifying my portfolio with [Your Company Name] was a game-changer. Their co-ownership model minimized risk and maximized returns. Grateful for their expertise!",
     },
-  ];
-
-  const BottomTestimonial = [
     {
       name: "Jane Doe",
       role: "Investor",
@@ -65,8 +64,8 @@ const Testimonial = () => {
         "https://source.unsplash.com/man-standing-near-white-wall-d1UPkiFd04A",
       review:
         "Took my portfolio to the next level. Their platform offers access to high-quality properties and a supportive community of investors. Great experience!",
-    },
-  ];
+    }
+];
 
   return (
     <>
@@ -91,20 +90,23 @@ const Testimonial = () => {
 
       <HStack w={"100%"} h={"100%"} align={"center"} justify={"center"} >
         <HStack
+        fontFamily={"Raleway"}
           w={"100%"}
           h={"100%"}
           align={"start"}
           justify={"center"}
-          gap={["5px", "8px", "12px", "15px", "20px"]}
-          mt={"125px"}
-          px={["10px", "10px", "30px", "40px", "60px"]}
-         
+          gap={["10px", "8px", "12px", "15px", "20px"]}
+          mt={["85px", "85px", "150px", "250px", "250px"]}
+          px={["0px", "10px", "30px", "40px", "60px"]}
+         wrap={["wrap", "wrap", "wrap", "wrap", "wrap"]}
         >
-          {topTestimonial.map(({ name, role, image, review }, index) => (
+          {testimonials.map(({ name, role, image, review }, index) => (
             <Box
               key={index}
-              w={["500px", "500px", "500px", "325px", "500px"]}
-              h={"300px"}
+              w={["170px", "500px", "500px", "325px", "500px"]}
+              
+              h={["225px", "300px", "290px", "250px", "250px"]}
+              maxW={["200px", "200px", "250px", "100%", "100%"]}
               shadow={"0px 0px 20px rgba(0,0,0,0.25)"}
               p={["10px", "13px", "16px", "18px", "20px"]}
               rounded={"10px"}
@@ -123,7 +125,7 @@ const Testimonial = () => {
                     fontSize={["12px", "13px", "16px", "18px", "20px"]}
                     fontFamily={"Raleway"}
                     fontWeight={"500"}
-                    ml={"10px"}
+                   
                     color={"#393939"}
                   >
                     {name}
@@ -132,7 +134,7 @@ const Testimonial = () => {
                     fontSize={["9px", "10px", "14px", "15px", "16px"]}
                     fontFamily={"Raleway"}
                     fontWeight={"700"}
-                    ml={"10px"}
+                   
                     color={"#393939"}
                   >
                     {role}
@@ -146,13 +148,14 @@ const Testimonial = () => {
                 w={"100%"}
                 justify={"left"}
                 align={"start"}
+                fontSize={["10px", "11px", "14px", "15px", "16px"]}
               >
-                <FaQuoteLeft fontSize={"16px"} />{" "}
+                <FaQuoteLeft />{" "}
               </HStack>
 
-              <Text    fontSize={["9px", "11px", "14px", "15px", "16px"]} >{review}</Text>
+              <Text  fontWeight={"400"}   fontSize={["10px", "11px", "14px", "15px", "16px"]} >{review}</Text>
 
-              <HStack mt={"0px"} w={"100%"} justify={"end"} align={"end"}>
+              <HStack mt={"10px"} w={"100%"} justify={"end"} align={"end"}>
                 <FaQuoteRight fontSize={"16px"} />{" "}
               </HStack>
             </Box>
@@ -160,75 +163,7 @@ const Testimonial = () => {
         </HStack>
       </HStack>
 
-      <HStack w={"100%"} h={"100%"} align={"center"} justify={"center"}>
-        <HStack
-          w={"100%"}
-          h={"100%"}
-          align={"start"}
-          justify={"center"}
-          gap={"20px"}
-          mt={"25px"}
-          px={["10px", "30px", "50px", "70px", "100px"]}
-        >
-          {BottomTestimonial.map(({ name, role, image, review }, index) => (
-            <Box
-              key={index}
-              w={["500px", "500px", "500px", "325px", "500px"]}
-              h={"300px"}
-              shadow={"0px 0px 20px rgba(0,0,0,0.25)"}
-              p={["10px", "13px", "16px", "18px", "20px"]}
-              rounded={"10px"}
-            >
-              <HStack w={"100%"} align={"left"} justify={"left"}>
-                <Avatar name="Dan Abrahmov" src={`${image}`}>
-                  {" "}
-                </Avatar>
-                <VStack
-                  w={"100%"}
-                  align={"left"}
-                  justify={"left"}
-                  gap={"-10px"}
-                >
-                  <Text
-                    fontSize={["12px", "13px", "16px", "18px", "20px"]}
-                    fontFamily={"Raleway"}
-                    fontWeight={"500"}
-                    ml={"10px"}
-                    color={"#393939"}
-                  >
-                    {name}
-                  </Text>
-                  <Text
-                    fontSize={["9px", "10px", "14px", "15px", "16px"]}
-                    fontFamily={"Raleway"}
-                    fontWeight={"700"}
-                    ml={"10px"}
-                    color={"#393939"}
-                  >
-                    {role}
-                  </Text>
-                </VStack>
-              </HStack>
 
-              <HStack
-                mt={"20px"}
-                mb={"10px"}
-                w={"100%"}
-                justify={"left"}
-                align={"start"}
-              >
-                <FaQuoteLeft fontSize={"16px"} />{" "}
-              </HStack>
-
-              <Text    fontSize={["9px", "11px", "14px", "15px", "16px"]} >{review}</Text>
-
-              <HStack mt={"0px"} w={"100%"} justify={"end"} align={"end"}>
-                <FaQuoteRight fontSize={"16px"} />{" "}
-              </HStack>
-            </Box>
-          ))}
-        </HStack>
-      </HStack>
     </>
   );
 };
