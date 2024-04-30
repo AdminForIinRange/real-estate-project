@@ -11,7 +11,7 @@ const Footer = () => {
       bgColor="white"
       py={2}
       borderRadius={"15px"}
-      color={"black"}
+      bg={"#f6f6f6"}
     >
       <Flex
         direction={{ base: "column", md: "row" }}

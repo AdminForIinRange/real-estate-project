@@ -11,7 +11,7 @@ import Faq from "@/components/faq/faq";
 const Home = () => {
   return (
     <>
-      <Box px={["2", "2", "5", "5", "5"]} pl={["2", "2", "5", "12", "12"]}>
+      <Box px={["2", "2", "5", "5", "5"]} pl={["2", "2", "5", "12", "12"]} bg={"#f6f6f6"}>
         <Box>
           <Navbar />
         </Box>
