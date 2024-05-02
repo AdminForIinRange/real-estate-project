@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import SwirlyStar from "@/Svg/SwirlyStar.svg";
+import HallowFlower from "@/Svg/hollowFlower.svg";
 import {
   HStack,
   Text,
@@ -31,6 +31,7 @@ import {
   ResponsiveContainer,
 } from "recharts";
 import Image from "next/image";
+
 
 const CustomTooltip = ({ active, payload, label }) => {
     if (active && payload && payload.length) {
@@ -90,7 +91,7 @@ const Stats = () => {
     <>
       <HStack justify="center" mt="250px">
         <HStack px="50px" gap="5px" textColor="#393939">
-          <Image src={SwirlyStar} width={100} height={100} />
+          <Image src={HallowFlower} width={100} height={100}  />
           <Text
             fontSize={["40px", "40px", "40px", "50px", "70px"]}
             fontFamily="Raleway"
@@ -107,7 +108,7 @@ const Stats = () => {
             data={data}
             margin={{ top: 20, right: 20, bottom: 20, left: 20 }}
           >
-            <CartesianGrid stroke="#f5f5f5" />
+           
             <XAxis dataKey="name" scale="point"  />
 { isTablet ? null : <YAxis  />}
             <Tooltip content={<CustomTooltip />} />
@@ -116,8 +117,8 @@ const Stats = () => {
             
               type="monotone"
               dataKey="AverageHousePrices"
-              fill="#8884d8"
-              stroke="#8884d8"
+              fill="#2D3748"
+              stroke="#ffff"
             />
 
 

@@ -7,14 +7,14 @@ import { FaGoogle, FaGithub, FaLinkedin } from "react-icons/fa";
 const Footer = () => {
   return (
     <Box
-      mt={["100px", "200px", "300px", "300px", "300px"]}
+      mt={["150px", "200px", "300px", "300px", "300px"]}
       bgColor="white"
       py={2}
       borderRadius={"15px"}
       bg={"#f6f6f6"}
     >
       <Flex
-        direction={{ base: "column", md: "row" }}
+        direction={{ base: "row", md: "row" }}
         justify="space-around"
         align="start"
         color={"black"}

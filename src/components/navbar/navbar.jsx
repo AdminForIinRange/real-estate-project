@@ -25,10 +25,16 @@ const Navbar = () => {
               gap={["6", "10", "20", "20", "20"]}
               fontFamily={"Raleway"}
             >
-              <Box minW={"10"}>
-                <Image src={Logo} />
-              </Box>
+        
 
+                <Box minW={"10"}>
+
+                  <Image src={Logo} />
+
+                </Box>
+
+            
+   
               <Box w={["0%", "0%", "0%", "0%", "50%"]}></Box>
 
               <Text

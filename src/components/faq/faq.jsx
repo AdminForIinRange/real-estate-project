@@ -5,11 +5,14 @@ import {
   Text,
   Accordion,
   AccordionItem,
+  HStack,
   AccordionButton,
   AccordionPanel,
   AccordionIcon,
 } from "@chakra-ui/react";
+import Image from "next/image";
 
+import RainBow from "@/Svg/RainBow.svg";
 const Faq = () => {
   // Define an array of FAQ questions and answers
   const faqData = [
@@ -59,28 +62,18 @@ const Faq = () => {
         align={"center"}
         color={"#393939"}
       >
-        <VStack justify={"center"} align={"center"}>
+         <HStack justify="center" mt="250px">
+        <HStack px="50px" gap="5px" textColor="#393939">
+          <Image src={RainBow} width={100} height={100}  />
           <Text
-            textAlign={"center"}
-            fontSize={["16px", "26px", "36px", "46px", "46px"]}
-            color={"#393939"}
-            fontWeight={"700"}
-            w={["100%", "100%", "100%", "100%", "100%"]}
-            fontFamily={"Raleway"}
+            fontSize={["40px", "40px", "40px", "50px", "70px"]}
+            fontFamily="Raleway"
+            fontWeight="500"
           >
-            Frequently Asked Questions
+           FAQ
           </Text>
-          <Text
-            textAlign={"center"}
-            fontSize={["12px", "12px", "16px", "23px", "23px"]}
-            color={"#393939"}
-            fontWeight={"500"}
-            w={["100%", "100%", "100%", "100%", "100%"]}
-            fontFamily={"Raleway"}
-          >
-            Everything you need to know in one place
-          </Text>
-        </VStack>
+        </HStack>
+      </HStack>
 
         <VStack
           w={["95%", "95%", "95%", "90%", "90%"]}
