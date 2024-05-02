@@ -22,7 +22,7 @@ import dimond from "@/Svg/dimond.svg";
 import FeaturedHouseBox from "../featuredHouseBox/featuredHouseBox";
 import IdeaBox from "../ideaBox/ideaBox";
 import HeroTextInput from "../heroTextInput/heroTextInput";
-import HouseVerticalBanner from "@/components/houseVerticalBanner/HouseVerticalBanner";
+import HouseVerticalBanner from "@/components/houseVerticalBanner/houseVerticalBanner";
 
 const Hero = () => {
   const [isMobile] = useMediaQuery("(max-width: 768px)");
