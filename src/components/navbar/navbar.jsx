@@ -25,61 +25,59 @@ const Navbar = () => {
               gap={["6", "10", "20", "20", "20"]}
               fontFamily={"Raleway"}
             >
-        
+              <Box minW={"10"}>
+                <Image src={Logo} />
+              </Box>
 
-                <Box minW={"10"}>
-
-                  <Image src={Logo} />
-
-                </Box>
-
-            
-   
               <Box w={["0%", "0%", "0%", "0%", "50%"]}></Box>
 
-              <Text  cursor={"pointer"}
-              _hover={{
-                transform: "scale(1.2)",
-                transition: "all 0.3s ease-in-out",
-              }}
-                
-          
+              <Text
+                 transition={"all 0.3s ease-in-out"}
+                cursor={"pointer"}
+                _hover={{
+                  transform: "scale(1.2)",
+                 
+                }}
+               
                 whiteSpace={"nowrap"}
                 fontSize={["12px", "12px", "14px", "16px", "16px"]}
               >
                 Blog
               </Text>
 
-              <Text  cursor={"pointer"}
-              _hover={{
-                transform: "scale(1.2)",
-                transition: "all 0.3s ease-in-out",
-              }}
-                
+              <Text
+                transition={"all 0.3s ease-in-out"}
+                cursor={"pointer"}
+                _hover={{
+                  transform: "scale(1.2)",
+                  transition: "all 0.3s ease-in-out",
+                }}
                 whiteSpace={"nowrap"}
                 fontSize={["12px", "12px", "14px", "16px", "16px"]}
               >
                 About Us
               </Text>
 
-              <Text  cursor={"pointer"}
-              _hover={{
-                transform: "scale(1.2)",
-                transition: "all 0.3s ease-in-out",
-              }}
-                
+              <Text
+                transition={"all 0.3s ease-in-out"}
+                cursor={"pointer"}
+                _hover={{
+                  transform: "scale(1.2)",
+                  transition: "all 0.3s ease-in-out",
+                }}
                 whiteSpace={"nowrap"}
                 fontSize={["12px", "12px", "14px", "16px", "16px"]}
               >
                 Properties{" "}
               </Text>
 
-              <Text  cursor={"pointer"}
-              _hover={{
-                transform: "scale(1.2)",
-                transition: "all 0.3s ease-in-out",
-              }}
-                
+              <Text
+                transition={"all 0.3s ease-in-out"}
+                cursor={"pointer"}
+                _hover={{
+                  transform: "scale(1.2)",
+                  transition: "all 0.3s ease-in-out",
+                }}
                 whiteSpace={"nowrap"}
                 fontSize={["12px", "12px", "14px", "16px", "16px"]}
               >
