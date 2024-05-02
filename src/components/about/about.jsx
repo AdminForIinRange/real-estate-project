@@ -18,7 +18,7 @@ import {
   useMediaQuery,
 } from "@chakra-ui/react";
 import HouseStats from "./houseStats/houseStats";
-import ApartmentVerticalBanner from "../apartmentVerticalBanner/apartmentVerticalBanner";
+
 import WhyCoOwnership from "./whyCoOwnership/whyCoOwnership";
 import BenefitsinCoOwnership from "./benefitsinCoOwnership/benefitsinCoOwnership";
 
