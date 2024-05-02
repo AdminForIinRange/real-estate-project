@@ -72,12 +72,12 @@ const CompanyMaterial = () => {
           gap={["10px", "8px", "12px", "15px", "20px"]}
           mt={["85px", "85px", "150px", "200px", "225px"]}
           px={["0px", "10px", "30px", "40px", "60px"]}
-          wrap={["wrap", "wrap", "wrap", "wrap", "wrap"]}
+          wrap={["wrap", "wrap", "nowrap", "nowrap", "nowrap"]}
         >
           {PdfDownload.map(({ id, title, p }) => (
             <Box
               key={id}
-              w={["170px", "170px", "230px", "325px", "500px"]}
+              w={["170px", "170px", "100%", "100%", "100%"]}
               h={["235px", "235px", "285px", "285px", "285px"]}
               shadow={"0px 0px 20px rgba(0,0,0,0.25)"}
               p={"15px"}

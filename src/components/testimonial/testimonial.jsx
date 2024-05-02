@@ -154,7 +154,7 @@ const Testimonial = () => {
 
               <Text
                 fontWeight={"400"}
-                fontSize={["10px", "11px", "14px", "15px", "16px"]}
+                fontSize={["10px", "14px", "14px", "15px", "16px"]}
               >
                 {review}
               </Text>
