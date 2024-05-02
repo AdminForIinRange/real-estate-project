@@ -57,7 +57,7 @@ const Faq = () => {
     <>
       <VStack
         w={"100%"}
-        mt={["100px", "200px", "200", "250px", "250px"]}
+        mt={["50px", "50px", "70px", "70px", "70px"]}
         justify={"center"}
         align={"center"}
         color={"#393939"}

@@ -72,7 +72,7 @@ const Testimonial = () => {
         h={"100%"}
         align={"center"}
         justify={"center"}
-        mt={"250px"}
+        mt={["85px", "85px", "150px", "200px", "225px"]}
       >
         <HStack px={"50px"} gap={"5px"} textColor={"#393939"}>
           <Image src={Swiss} width={100} height={100} />

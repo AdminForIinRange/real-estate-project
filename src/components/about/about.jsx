@@ -48,7 +48,7 @@ const About = () => {
   ];
   return (
     <>
-      <Box mt={"250px"}>
+      <Box  mt={["85px", "85px", "150px", "200px", "225px"]}>
         <VStack
           h={"100%"}
           align={"start"}
@@ -71,7 +71,7 @@ const About = () => {
         <HouseStats />
       </HStack>
 
-      <Box mt={"250px"}>
+      <Box  mt={["85px", "85px", "150px", "200px", "225px"]}>
         <VStack
           px={["0px", "20px", "30px", "40px", "50px"]}
           h={"100%"}

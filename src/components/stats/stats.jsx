@@ -89,7 +89,7 @@ const Stats = () => {
       
   return (
     <>
-      <HStack justify="center" mt="250px">
+      <HStack justify="center"  mt={["85px", "85px", "150px", "200px", "225px"]}>
         <HStack px="50px" gap="5px" textColor="#393939">
           <Image src={HallowFlower} width={100} height={100}  />
           <Text
