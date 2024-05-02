@@ -1,18 +1,8 @@
-import React from "react";
 
 import {
-  HStack,
-  Text,
+
   Box,
-  Icon,
-  Spacer,
-  VStack,
-  Input,
-  InputGroup,
-  InputRightAddon,
-  MdUnsubscribe,
-  Button,
-  useMediaQuery,
+
 } from "@chakra-ui/react";
 const HouseVerticalBanner = () => {
   return (
