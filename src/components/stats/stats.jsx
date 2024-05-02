@@ -34,17 +34,18 @@ import Image from "next/image";
 
 const CustomTooltip = ({ active, payload, label }) => {
     if (active && payload && payload.length) {
+      const housePrice = payload[0].value.toLocaleString();
       return (
         <div style={{ backgroundColor: '#fff', padding: '5px', border: '1px solid #ccc' }}>
           <p>{`Year: ${label}`}</p>
-  
-          <p>{`${label > 2024 ? "Projection" : "House Price"}: $${payload[0].value}`}</p>
+          <p>{`${label > 2024 ? "Projections" : "House Price"}: $${housePrice}`}</p>
         </div>
       );
     }
   
     return null;
   };
+  
 const Stats = () => {
 
     const [isTablet] = useMediaQuery("(max-width: 1024px)");
@@ -74,6 +75,7 @@ const Stats = () => {
         { name: "2022", AverageHousePrices: 675000 },
         { name: "2023", AverageHousePrices: 735000 },
         { name: "2024", AverageHousePrices: 775000 },
+        
         { name: "2025", AverageHousePrices: 845000 },
         { name: "2026", AverageHousePrices: 865000 },
         { name: "2027", AverageHousePrices: 915000 },
@@ -100,23 +102,25 @@ const Stats = () => {
       </HStack>
 
       <HStack justify="center" mt="60px">
-       <ResponsiveContainer width={isTablet ? "95%" : "85%"} height={400}>
+       <ResponsiveContainer width={isTablet ? "98%" : "95%"} height={400}>
           <ComposedChart
             data={data}
             margin={{ top: 20, right: 20, bottom: 20, left: 20 }}
           >
             <CartesianGrid stroke="#f5f5f5" />
-            <XAxis dataKey="name" scale="point" padding={{ left: 10, right: 10 }} />
-
+            <XAxis dataKey="name" scale="point"  />
+{ isTablet ? null : <YAxis  />}
             <Tooltip content={<CustomTooltip />} />
     
-            <Line
+            <Area
             
               type="monotone"
               dataKey="AverageHousePrices"
               fill="#8884d8"
               stroke="#8884d8"
             />
+
+
           </ComposedChart>
         </ResponsiveContainer> 
       </HStack>
