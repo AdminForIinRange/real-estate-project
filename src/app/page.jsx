@@ -8,6 +8,7 @@ import Testimonial from "@/components/testimonial/testimonial";
 import CompanyMaterial from "@/components/companyMaterial/companyMaterial";
 import Footer from "@/components/footer/footer";
 import Faq from "@/components/faq/faq";
+import Stats from "@/components/stats/stats";
 const Home = () => {
   return (
     <>
@@ -25,6 +26,11 @@ const Home = () => {
 
         <Box>
           <Listing />
+        </Box>
+
+
+        <Box>
+          <Stats />
         </Box>
         <Box>
           <Testimonial />
