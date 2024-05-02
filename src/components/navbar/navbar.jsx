@@ -37,28 +37,49 @@ const Navbar = () => {
    
               <Box w={["0%", "0%", "0%", "0%", "50%"]}></Box>
 
-              <Text
+              <Text  cursor={"pointer"}
+              _hover={{
+                transform: "scale(1.2)",
+                transition: "all 0.3s ease-in-out",
+              }}
+                
+          
                 whiteSpace={"nowrap"}
                 fontSize={["12px", "12px", "14px", "16px", "16px"]}
               >
                 Blog
               </Text>
 
-              <Text
+              <Text  cursor={"pointer"}
+              _hover={{
+                transform: "scale(1.2)",
+                transition: "all 0.3s ease-in-out",
+              }}
+                
                 whiteSpace={"nowrap"}
                 fontSize={["12px", "12px", "14px", "16px", "16px"]}
               >
                 About Us
               </Text>
 
-              <Text
+              <Text  cursor={"pointer"}
+              _hover={{
+                transform: "scale(1.2)",
+                transition: "all 0.3s ease-in-out",
+              }}
+                
                 whiteSpace={"nowrap"}
                 fontSize={["12px", "12px", "14px", "16px", "16px"]}
               >
                 Properties{" "}
               </Text>
 
-              <Text
+              <Text  cursor={"pointer"}
+              _hover={{
+                transform: "scale(1.2)",
+                transition: "all 0.3s ease-in-out",
+              }}
+                
                 whiteSpace={"nowrap"}
                 fontSize={["12px", "12px", "14px", "16px", "16px"]}
               >
