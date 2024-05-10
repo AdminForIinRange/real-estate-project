@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Real Estate Landing Page
+
+This project is a real estate landing page focused on the concept of co-ownership. It was built using Next.js 14, Recharts, and Chakra UI. Through the development of this landing page, I gained valuable experience with Next.js and enhanced my proficiency in using Recharts for data visualization. Additionally, I improved my skills as a developer by resolving build errors encountered during deployment on Vercel.
+
+### Links
+
+- [GitHub Repository](https://github.com/AdminForIinRange/real-estate-project)
+- [Live Deployment](https://real-estate-project-git-main-adminforiinranges-projects.vercel.app/)
+
+![Background](https://github.com/AdminForIinRange/real-estate-project/assets/91888685/549b0c89-94e7-4d23-9a78-45c0f52d1bae)
+
+
+## Key Features
+
+- Designed with a focus on co-ownership concept in real estate.
+- Utilizes Next.js 14 for server-side rendering and routing.
+- Implements Recharts for visualizing data related to real estate.
+- Utilizes Chakra UI for building accessible and themeable React components.
+- Strengthened knowledge in handling Vercel build errors.
+
+## Deployment
+
+The landing page is deployed on Vercel with streamlined build and deployment processes.
+
 
 ## Getting Started
 
-First, run the development server:
+To set up the project locally, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Clone the repository: `git clone https://github.com/AdminForIinRange/real-estate-project.git`
+2. Navigate into the project directory: `cd real-estate-project`
+3. Install dependencies: `npm install`
+4. Start the development server: `npm run dev`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Scripts
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- `npm run dev`: Start the Next.js development server.
+- `npm run build`: Build the Next.js application for production.
+- `npm start`: Start the Next.js production server.
+- `npm run lint`: Lint the project using Next.js ESLint configuration.
+- `npm run prettier`: Format project files using Prettier.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Dependencies
 
-## Learn More
+- **@chakra-ui/react**: ^2.8.2
+- **next**: 14.2.2
+- **prettier**: ^3.2.5
+- **react**: ^18
+- **react-dom**: ^18
+- **react-icons**: ^5.1.0
+- **recharts**: ^2.12.6
+- **tremor**: ^0.0.1
 
-To learn more about Next.js, take a look at the following resources:
+## Dev Dependencies
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **eslint**: ^8
+- **eslint-config-next**: 14.2.2
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Contributing
 
-## Deploy on Vercel
+Contributions are welcome! Feel free to submit bug reports, feature requests, or pull requests to improve the project.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Acknowledgements
+
+- Special thanks to the creators and maintainers of Next.js, Recharts, and Chakra UI for providing excellent tools and frameworks.
+- Thanks to Vercel for their seamless deployment platform.
+- Gratitude to the open-source community for their valuable contributions and support.
+
+## Contact
+
+For any inquiries or feedback, feel free to reach out:
+
+- Email: your.email@example.com
+- Twitter: [@your_twitter_handle](https://twitter.com/your_twitter_handle)
+
